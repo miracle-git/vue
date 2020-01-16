@@ -1,0 +1,15 @@
+.m2-tab-bar-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 50px;
+  font-size: 14px;
+  text-align: center;
+}
+.m2-tab-bar-item img {
+  width: 24px;
+  height: 24px;
+  margin: 4px 0 2px;
+}
+
+/*# sourceMappingURL=m2-tab-bar-item.css.map*/

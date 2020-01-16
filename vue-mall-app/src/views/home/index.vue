@@ -1,14 +1,18 @@
 <template>
   <div class="home-page">
-    首页
+    <m2-nav-bar>
+      <span slot="center">购物街</span>
+    </m2-nav-bar>
   </div>
 </template>
 
 <script>
-  export default {}
-</script>
+  import './index.less'
+  import { getMultiData } from 'services/home.service'
 
-<style scoped lang="less">
-  .home-page {
+  export default {
+    created() {
+      getMultiData().then(res => console.log(res))
+    }
   }
-</style>
+</script>

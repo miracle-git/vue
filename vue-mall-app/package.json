@@ -8,12 +8,14 @@
     "url": "https://github.com/miracle-git/fts.git"
   },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve --mode dev",
+    "build:sit": "vue-cli-service build --mode sit",
+    "build:prd": "vue-cli-service build --mode prd",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.4.3",
+    "m2-core": "^1.4.0",
     "m2-vue-ui": "^1.0.3-beta",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
