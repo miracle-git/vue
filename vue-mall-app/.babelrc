@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    [
+      "component",
+      {
+        "libraryName": "m2-vue-ui",
+        "styleLibraryName": "theme"
+      }
+    ]
+  ]
+}
