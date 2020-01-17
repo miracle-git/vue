@@ -1,6 +1,6 @@
 <template>
-  <m2-swiper v-if="banners.length">
-    <m2-swiper-item v-for="(item, index) in banners" :key="index">
+  <m2-swiper v-if="items.length">
+    <m2-swiper-item v-for="(item, index) in items" :key="index">
       <a :href="item.link">
         <img :src="item.image" alt="">
       </a>
@@ -10,9 +10,9 @@
 
 <script>
   export default {
-    name: 'home-swiper',
+    name: 'swiper',
     props: {
-      banners: {
+      items: {
         type: Array,
         default() {
           return []

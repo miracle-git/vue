@@ -96,3 +96,16 @@ ul {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+.padding-top-bar {
+  padding-top: 44px;
+}
+
+.padding-bottom-bar {
+  padding-bottom: 50px;
+}
+
+.padding-bar {
+  padding-top: 44px;
+  padding-bottom: 50px;
+}

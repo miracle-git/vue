@@ -1,0 +1,22 @@
+.tab-control {
+  display: flex;
+  /*吸顶效果*/
+  position: sticky;
+  top: 44px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  background: #fff;
+  text-align: center;
+  z-index: 10;
+  .tab-control-item {
+    flex: 1;
+    &.active {
+      color: var(--color-hl-text);
+      .item-text {
+        border-bottom: 2px solid var(--color-hl-text);
+        padding-bottom: 4px;
+      }
+    }
+  }
+}
