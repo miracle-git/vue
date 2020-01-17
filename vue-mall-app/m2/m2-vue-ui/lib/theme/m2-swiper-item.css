@@ -1,0 +1,10 @@
+.m2-swiper-item {
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.m2-swiper-item img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=m2-swiper-item.css.map*/

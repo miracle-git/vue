@@ -8,6 +8,8 @@ module.exports = {
     '@vue/standard'
   ],
   rules: {
+    'semi': 'off',
+    'no-tabs': 'off',
     'camelcase': 'off',
     'valid-typeof': 'off',
     'no-sequences': 'off',

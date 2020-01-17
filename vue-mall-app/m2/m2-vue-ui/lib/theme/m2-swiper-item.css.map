@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./packages/m2-swiper-item/src/index.less"],"names":[],"mappings":"AAAA;EACE;EACA;MAAA;CACD;AAHD;EAII;CAEH","file":"/theme/m2-swiper-item.css","sourcesContent":[".m2-swiper-item {\n  width: 100%;\n  flex-shrink: 0;\n  img {\n    width: 100%;\n  }\n}\n\n\n\n// WEBPACK FOOTER //\n// ./packages/m2-swiper-item/src/index.less"],"sourceRoot":""}

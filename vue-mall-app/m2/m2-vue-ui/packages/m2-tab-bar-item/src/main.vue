@@ -8,6 +8,7 @@
 
 <script>
   import './index.less'
+
   export default {
     name: 'm2-tab-bar-item',
     props: {
