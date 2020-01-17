@@ -1,11 +1,15 @@
 import M2NavBar from './m2-nav-bar'
 import M2TabBar from './m2-tab-bar'
 import M2TabBarItem from './m2-tab-bar-item'
+import M2Swiper from './m2-swiper'
+import M2SwiperItem from './m2-swiper-item'
 
 const components = [
   M2NavBar,
   M2TabBar,
-  M2TabBarItem
+  M2TabBarItem,
+  M2Swiper,
+  M2SwiperItem
 ]
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
@@ -32,5 +36,7 @@ export default {
   // 以下是具体的组件列表
   M2NavBar,
   M2TabBar,
-  M2TabBarItem
+  M2TabBarItem,
+  M2Swiper,
+  M2SwiperItem
 }
