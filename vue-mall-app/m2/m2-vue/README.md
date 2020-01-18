@@ -10,11 +10,11 @@ npm install m2-vue
 yarn add m2-vue
 ```
 ### APIs
-- `render` **function** Render the root component(s) with the param *rootApp*.
+- `render` **function** Render the root component with the param *rootApp*.
  ####
  | param | type | description | default | example |
  | ------------ | ------------ | ------------ | ------------ | ------------ |
- | rootApp | object | the root component(s)|  |
+ | rootApp | object | the root component |  |
  | options | object | the config options | {} |
  ```js
  import { render } from 'm2-vue'
@@ -22,12 +22,12 @@ yarn add m2-vue
  import App from './views/app'
  import router from './router'
  import store from './store'
- import 'm2-vue-ui/lib/theme/index.css'
+ import 'm2-vue-ui/lib/theme/base.css'
  
  render(App, {
    router,
    store,
-   boot: Vue => {
+   init: Vue => {
      Vue.use(VueUI)
    }
  })
@@ -35,7 +35,7 @@ yarn add m2-vue
  // render({ component: App, root: '#root' }, {
  //   router,
  //   store,
- //   boot: Vue => {
+ //   init: Vue => {
  //     Vue.use(VueUI)
  //   }
  // })

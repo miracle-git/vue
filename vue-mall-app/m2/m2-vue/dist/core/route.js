@@ -22,13 +22,16 @@ function getRouter(routesConfig) {
 
   _vue.default.use(_vueRouter.default);
 
-  options.redirect && routesConfig.unshift({
+  var mode = options.mode,
+      base = options.base,
+      redirect = options.redirect;
+  redirect && routesConfig.unshift({
     path: '',
-    redirect: options.redirect
+    redirect: redirect
   });
   return new _vueRouter.default({
-    mode: options.mode || 'history',
-    base: options.base || process.env.BASE_URL,
+    mode: mode || 'history',
+    base: base || process.env.BASE_URL,
     routes: routesConfig
   });
 }

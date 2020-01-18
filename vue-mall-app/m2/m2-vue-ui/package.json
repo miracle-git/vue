@@ -1,6 +1,6 @@
 {
   "name": "m2-vue-ui",
-  "version": "1.0.3-beta",
+  "version": "1.0.4-beta",
   "description": "The package is provided components and ui based on vue",
   "author": "Miracle He",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "better-scroll": "1.13.2",
     "vue": "^2.5.2"
   },
   "devDependencies": {

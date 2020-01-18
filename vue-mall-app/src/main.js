@@ -7,7 +7,7 @@ import store from './store'
 render(App, {
   router,
   store,
-  boot: Vue => {
+  init: Vue => {
     Vue.use(VueUI)
   }
 })

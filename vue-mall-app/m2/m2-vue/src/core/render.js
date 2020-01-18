@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import { DataEvent } from 'm2-core'
 
 Vue.config.productionTip = false
 
@@ -13,10 +14,14 @@ export function render(rootApp, options = {}) {
     console.error('Vue根组件参数rootApp或rootApp.component尚未配置, 应用无法启动！')
     return
   }
-
-  const { router, store, boot } = options
-
-  typeof boot === 'function' && boot(Vue)
+  // 为Vue实例挂载数据总线
+  Vue.prototype.$bus = new Vue()
+  // 为Vue实例挂载防抖节流
+  Vue.prototype.$bus.$throttle = DataEvent.throttle
+  Vue.prototype.$bus.$debounce = DataEvent.debounce
+  // 在App渲染之前执行初始化
+  const { router, store, init } = options
+  typeof init === 'function' && init(Vue)
 
   return new Vue({
     router,

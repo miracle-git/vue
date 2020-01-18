@@ -1,7 +1,9 @@
 {
+  "m2-back-top": "./packages/m2-back-top",
   "m2-nav-bar": "./packages/m2-nav-bar",
   "m2-tab-bar": "./packages/m2-tab-bar",
   "m2-tab-bar-item": "./packages/m2-tab-bar-item",
+  "m2-scroll": "./packages/m2-scroll",
   "m2-swiper": "./packages/m2-swiper",
   "m2-swiper-item": "./packages/m2-swiper-item",
   "base": "./packages/index.js"

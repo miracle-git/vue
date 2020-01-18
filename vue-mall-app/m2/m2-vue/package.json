@@ -20,6 +20,7 @@
     "prepublishOnly": "NODE_ENV='publish' yarn build"
   },
   "dependencies": {
+    "m2-core": "^1.4.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.3"
   },

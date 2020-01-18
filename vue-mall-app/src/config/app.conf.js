@@ -4,3 +4,6 @@ export const TAB_BAR_DATA = [
   { path: '/shopcart', icon: require('assets/img/tabbar/shopcart.svg'), activeIcon: require('assets/img/tabbar/shopcart_active.svg'), text: '购物车' },
   { path: '/profile', icon: require('assets/img/tabbar/profile.svg'), activeIcon: require('assets/img/tabbar/profile_active.svg'), text: '我的' }
 ]
+export const EVENT_BUS_NAMES = {
+  PRODUCT_IMAGE_LOAD: 'PRODUCT_IMAGE_LOAD'
+}

@@ -7,6 +7,8 @@ exports.render = render;
 
 var _vue = _interopRequireDefault(require("vue"));
 
+var _m2Core = require("m2-core");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _vue.default.config.productionTip = false;
@@ -23,12 +25,18 @@ function render(rootApp) {
   if (!rootApp || !rootApp.component && !rootApp.render) {
     console.error('Vue根组件参数rootApp或rootApp.component尚未配置, 应用无法启动！');
     return;
-  }
+  } // 为Vue实例挂载数据总线
+
+
+  _vue.default.prototype.$bus = new _vue.default(); // 为Vue实例挂载防抖节流
+
+  _vue.default.prototype.$bus.$throttle = _m2Core.DataEvent.throttle;
+  _vue.default.prototype.$bus.$debounce = _m2Core.DataEvent.debounce; // 在App渲染之前执行初始化
 
   var router = options.router,
       store = options.store,
-      boot = options.boot;
-  typeof boot === 'function' && boot(_vue.default);
+      init = options.init;
+  typeof init === 'function' && init(_vue.default);
   return new _vue.default({
     router: router,
     store: store,
