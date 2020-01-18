@@ -42,15 +42,13 @@
         default: true
       }
     },
-    data() {
-      return {
-        sliderCount: 0, // 元素个数
-        isScrolling: false, // 是否正在滚动
-        swiperWidth: 0, // swiper的宽度
-        swiperStyle: {}, // swiper的样式
-        currentIndex: 1 // 当前显示slider的index
-      }
-    },
+    data: () => ({
+      sliderCount: 0, // 元素个数
+      isScrolling: false, // 是否正在滚动
+      swiperWidth: 0, // swiper的宽度
+      swiperStyle: {}, // swiper的样式
+      currentIndex: 1 // 当前显示slider的index
+    }),
     mounted() {
       setTimeout(() => {
         this.addSliders()

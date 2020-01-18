@@ -2,6 +2,7 @@ import M2BackTop from './m2-back-top'
 import M2NavBar from './m2-nav-bar'
 import M2TabBar from './m2-tab-bar'
 import M2TabBarItem from './m2-tab-bar-item'
+import M2SmartRoute from './m2-smart-route'
 import M2Scroll from './m2-scroll'
 import M2Swiper from './m2-swiper'
 import M2SwiperItem from './m2-swiper-item'
@@ -11,6 +12,7 @@ const components = [
   M2NavBar,
   M2TabBar,
   M2TabBarItem,
+  M2SmartRoute,
   M2Scroll,
   M2Swiper,
   M2SwiperItem
@@ -42,6 +44,7 @@ export default {
   M2NavBar,
   M2TabBar,
   M2TabBarItem,
+  M2SmartRoute,
   M2Scroll,
   M2Swiper,
   M2SwiperItem

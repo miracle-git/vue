@@ -1,5 +1,5 @@
 <template>
-  <div class="m2-back-top" v-show="visible">
+  <div class="m2-back-top">
     <img :src="icon" alt="">
   </div>
 </template>
@@ -13,10 +13,6 @@
       icon: {
         type: String,
         default: require('./top.png')
-      },
-      visible: {
-        type: Boolean,
-        default: false
       }
     }
   }

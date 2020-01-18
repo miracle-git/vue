@@ -1,16 +1,19 @@
 <template>
   <div class="home-page">
     <nav-bar/>
-    <m2-scroll class="content"
-               ref="scroll"
-               @scroll="contentScroll">
-      <swiper :items="banners"/>
+    <tab-control :items="productTabs" :current="currentType"
+                 @tabItemClick="tabItemClick" v-show="isShowTabControl"
+                 class="tab-control"/>
+    <m2-scroll class="content" ref="scroll"
+               @scroll="contentScroll" @pullingUp="loadMoreData">
+      <swiper :items="banners" @swiperImageLoad="swiperImageLoad"/>
       <recommend :items="recommends"/>
       <feature-view/>
-      <tab-control :items="productTabs" @tabItemClick="tabItemClick"/>
+      <tab-control :items="productTabs" :current="currentType"
+                   @tabItemClick="tabItemClick" ref="tabControl"/>
       <product-list :items="productList"/>
     </m2-scroll>
-    <m2-back-top @click.native="backTopClick" :visible="isShowBacktop"/>
+    <m2-back-top @click.native="backTopClick" v-show="isShowBacktop"/>
   </div>
 </template>
 
@@ -21,19 +24,20 @@
   import { NavBar, Swiper, Recommend, FeatureView } from './children'
 
   export default {
-    data() {
-      return {
-        banners: [],
-        recommends: [],
-        products: {
-          pop: { page: 0, text: '流行', list: [] },
-          new: { page: 0, text: '新款', list: [] },
-          sell: { page: 0, text: '精选', list: [] }
-        },
-        currentType: 'pop',
-        isShowBacktop: false
-      }
-    },
+    data: () => ({
+      banners: [],
+      recommends: [],
+      products: {
+        pop: { page: 0, text: '流行', list: [] },
+        new: { page: 0, text: '新款', list: [] },
+        sell: { page: 0, text: '精选', list: [] }
+      },
+      currentType: 'pop',
+      tabOffsetTop: 0,
+      currentScrollY: 0,
+      isShowBacktop: false,
+      isShowTabControl: false
+    }),
     computed: {
       productList() {
         return this.products[this.currentType].list
@@ -52,6 +56,12 @@
     mounted() {
       this.loadImageRefresh()
     },
+    activated() {
+      this.$refs.scroll.scrollTo(0, this.currentScrollY, 0).refresh()
+    },
+    deactivated() {
+      this.currentScrollY = this.$refs.scroll.getScrollY()
+    },
     methods: {
       getMultiData() {
         getMultiData().then(res => {
@@ -68,24 +78,29 @@
           productItem.list.push(...res.list)
           productItem.page++
           // 启动加载更多
-          // this.$refs.scroll.finishPullUp()
+          this.$refs.scroll.finishPullUp()
         })
       },
       tabItemClick(type) {
         this.currentType = type
-        console.log(type)
       },
       backTopClick() {
         this.$refs.scroll.scrollTop()
       },
       contentScroll(position) {
+        // 1.判断BackTop是否显示
         this.isShowBacktop = -position.y > 1000
+        // 2.判断TabControl是否吸顶
+        this.isShowTabControl = -position.y > this.tabOffsetTop
       },
       loadMoreData() {
         this.getProductsDataByType(this.currentType)
       },
       loadImageRefresh() {
         this.$bus.$on(EVENT_BUS_NAMES.PRODUCT_IMAGE_LOAD, this.$bus.$debounce(this.$refs.scroll.refresh))
+      },
+      swiperImageLoad() {
+        this.tabOffsetTop = this.$refs.tabControl.$el.offsetTop
       }
     },
     components: {

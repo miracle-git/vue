@@ -11,11 +11,9 @@
 
   export default {
     name: 'm2-scroll',
-    data() {
-      return {
-        $scroll: null
-      }
-    },
+    data: () => ({
+      $scroll: null
+    }),
     mounted() {
       this.initScroll()
     },
@@ -42,13 +40,18 @@
       },
       scrollTo(x, y, duration = 500) {
         this.$scroll && this.$scroll.scrollTo(x, y, duration)
+        return this.$scroll
       },
-      finishPullup() {
-        this.$scroll && this.$scroll.finishPullup()
+      finishPullUp() {
+        this.$scroll && this.$scroll.finishPullUp()
+        return this.$scroll
       },
       refresh() {
-        console.log('xxxxxx')
         this.$scroll && this.$scroll.refresh()
+        return this.$scroll
+      },
+      getScrollY() {
+        return this.$scroll ? this.$scroll.y : 0
       }
     }
   }

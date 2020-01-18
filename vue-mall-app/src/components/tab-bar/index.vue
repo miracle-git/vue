@@ -14,10 +14,8 @@
 
   export default {
     name: 'tab-bar',
-    data() {
-      return {
-        items: TAB_BAR_DATA
-      }
-    }
+    data: () => ({
+      items: TAB_BAR_DATA
+    })
   }
 </script>
