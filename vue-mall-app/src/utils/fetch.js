@@ -1,6 +1,16 @@
 import { DataType, DataFetch, DataUtil, DEFAULT_FETCH_OPTIONS } from 'm2-core'
 import env from 'config/env.conf'
 
+const _check = (res) => {
+  let result = {}
+  if (res.success || res.status.code === 1001) {
+    result = { success: true, data: res.data || res.result }
+  } else {
+    result = { success: false, data: null, msg: res.message }
+  }
+  return result
+}
+
 const _fetch = (url, options) => {
   const _opts = {
     ...DEFAULT_FETCH_OPTIONS,
@@ -17,6 +27,7 @@ const _fetch = (url, options) => {
       ..._opts
     }).then(res => {
       _opts.loading && ($indicator.style.display = 'none')
+      res = _check(res)
       if (res.success) {
         if (res.data) {
           if (_opts.key) {

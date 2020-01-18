@@ -5,6 +5,7 @@
   --color-text: #666;
   --color-hl-text: #ff5777;
   --color-tint: #ff8198;
+  --color-bd: #f2f5f8;
   --color-bg: #fff;
   --font-size: 14px;
   --line-height: 1.5;
@@ -95,17 +96,4 @@ ul {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-.padding-top-bar {
-  padding-top: 44px;
-}
-
-.padding-bottom-bar {
-  padding-bottom: 50px;
-}
-
-.padding-bar {
-  padding-top: 44px;
-  padding-bottom: 50px;
 }

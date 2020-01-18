@@ -1,0 +1,33 @@
+.product-image {
+  padding: 20px 0;
+  border-bottom: 8px solid var(--color-bd);
+  .product-info {
+    padding: 0 15px;
+    .desc {
+      padding: 15px 0;
+      font-size: 14px;
+    }
+    .start, .end {
+      position: relative;
+      width: 90px;
+      height: 1px;
+      background-color: #a3a3a5;
+    }
+    .start:before, .end:after {
+      position: absolute;
+      content: '';
+      width: 5px;
+      height: 5px;
+      bottom: 0;
+      background-color: #333;
+    }
+    .end:after {
+      right: 0;
+    }
+  }
+  .product-key {
+    margin: 10px 0 10px 15px;
+    font-size: 15px;
+    color: #333;
+  }
+}

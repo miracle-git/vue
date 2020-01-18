@@ -2,40 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ca5f97f-2267-4cfb-8827-6f095d320515" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-smart-route/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-smart-route/src/main.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/mixins/check-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/services/product.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/nav-bar/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/nav-bar/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-image/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-image/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-info/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-info/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-param/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-param/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-shop/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-shop/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/swiper/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/swiper/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/components.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/components.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/base.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/base.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-back-top.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-back-top.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-back-top.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-back-top.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-nav-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-nav-bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-nav-bar.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-nav-bar.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-scroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-scroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-scroll.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-scroll.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper-item.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper-item.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar-item.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar-item.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-back-top/src/main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-back-top/src/main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-scroll/src/main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-scroll/src/main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-swiper/src/main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-swiper/src/main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/components/product-list/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/components/product-list/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/components/tab-bar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/components/tab-bar/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/components/tab-control/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/components/tab-control/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/components/tab-control/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/components/tab-control/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/assets/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/assets/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/components/product-item/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/components/product-item/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/config/api.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/config/api.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/config/app.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/config/app.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/mixins/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/mixins/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/models/product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-mall-app/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/utils/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/utils/fetch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/home/children/nav-bar/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/home/children/nav-bar/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/home/children/swiper/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/home/children/swiper/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/home/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/home/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/home/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/home/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/home/children/recommend/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/home/children/recommend/index.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,30 +41,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/index.vue">
+        <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-param/index.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+            <state relative-caret-position="61">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-scroll/src/main.vue">
+        <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-param/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+            <state relative-caret-position="132">
+              <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue-mall-app/src/router/index.js">
+        <entry file="file://$PROJECT_DIR$/vue-mall-app/src/models/product.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="251">
+              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-info/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -90,44 +93,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-tab-bar-item/src/main.vue" />
-        <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-swiper/src/index.less" />
-        <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-swiper-item/src/main.vue" />
-        <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-swiper-item/src/index.less" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/components/SwiperItem.vue" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/components/Swiper.vue" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/views/home/children/recommend-view/index.vue" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/views/home/children/recommend-view/index.less" />
-        <option value="$PROJECT_DIR$/vue-mall-app/.eslintrc.js" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/views/home/children/nav-bar/index.vue" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/views/home/children/recommend/index.vue" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/views/home/children/recommend/index.less" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/views/home/children/feature-view/index.less" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/views/home/children/index.js" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/views/home/children/feature-view/index.vue" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/assets/css/base.css" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/services/home.service.js" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/config/api.conf.js" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/components/product-list/index.less" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/components/product-item/index.less" />
-        <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-scroll/index.js" />
-        <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-scroll/src/index.less" />
-        <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/package.json" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/components/Scroll.vue" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/components/index.js" />
         <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-backtop/index.js" />
         <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-backtop/src/main.vue" />
         <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-back-top/src/index.less" />
         <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue/README.md" />
         <option value="$PROJECT_DIR$/vue-mall-app/src/main.js" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/components/product-item/index.vue" />
         <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue/dist/core/render.js" />
         <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue/src/core/render.js" />
         <option value="$PROJECT_DIR$/vue-mall-app/src/components/product-list/index.vue" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/views/home/children/nav-bar/index.less" />
         <option value="$PROJECT_DIR$/vue-mall-app/src/views/home/index.less" />
         <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-back-top/src/main.vue" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/config/app.conf.js" />
         <option value="$PROJECT_DIR$/vue-mall-app/src/components/tab-control/index.less" />
         <option value="$PROJECT_DIR$/vue-mall-app/src/components/tab-control/index.vue" />
         <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-smart-route/index.js" />
@@ -138,14 +113,43 @@
         <option value="$PROJECT_DIR$/vue-mall-app/src/components/tab-bar/index.vue" />
         <option value="$PROJECT_DIR$/vue-mall-app/src/views/app.vue" />
         <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-smart-route/src/main.vue" />
-        <option value="$PROJECT_DIR$/vue-mall-app/src/router/index.js" />
         <option value="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-scroll/src/main.vue" />
         <option value="$PROJECT_DIR$/vue-mall-app/src/views/home/index.vue" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/router/index.js" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/components/product-item/index.vue" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/home/children/nav-bar/index.less" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/nav-bar/index.vue" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/nav-bar/index.less" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/config/api.conf.js" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/services/product.service.js" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/utils/fetch.js" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/swiper/index.vue" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/swiper/index.less" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/home/children/recommend/index.less" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/mixins/index.js" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/mixins/check-data.js" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-info/index.vue" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-shop/index.less" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-shop/index.vue" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/assets/css/base.css" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/index.less" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-detail/index.less" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-detail/index.vue" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-info/index.less" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-image/index.less" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-image/index.vue" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/index.js" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/config/app.conf.js" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/index.vue" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/models/product.js" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-param/index.vue" />
+        <option value="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-param/index.less" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="39" />
+    <option name="x" value="114" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="741" />
   </component>
@@ -154,6 +158,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,40 +175,6 @@
               <item name="vue" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue" type="462c0819:PsiDirectoryNode" />
               <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="m2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="m2" type="462c0819:PsiDirectoryNode" />
-              <item name="m2-vue-ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="m2" type="462c0819:PsiDirectoryNode" />
-              <item name="m2-vue-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="m2" type="462c0819:PsiDirectoryNode" />
-              <item name="m2-vue-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="m2-scroll" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="m2" type="462c0819:PsiDirectoryNode" />
-              <item name="m2-vue-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="m2-scroll" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -211,6 +182,7 @@
               <item name="vue" type="462c0819:PsiDirectoryNode" />
               <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue" type="b2602c69:ProjectViewProjectNode" />
@@ -225,13 +197,31 @@
               <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="detail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="detail" type="462c0819:PsiDirectoryNode" />
+              <item name="children" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="detail" type="462c0819:PsiDirectoryNode" />
+              <item name="children" type="462c0819:PsiDirectoryNode" />
+              <item name="product-info" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,24 +259,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579145385142</updated>
-      <workItem from="1579145386632" duration="62528000" />
+      <workItem from="1579145386632" duration="75194000" />
+      <workItem from="1579351605661" duration="3787000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62528000" />
+    <option name="totallyTimeSpent" value="78981000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="39" width="1280" height="741" extended-state="0" />
+    <frame x="114" y="23" width="1280" height="741" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.328594" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.328594" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -294,6 +281,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.328594" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -322,201 +313,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/models/product.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/vue.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/config/api.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/services/home.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/utils/fetch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/components/product-item/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/components/product-list/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-scroll/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/.env.loc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/components/Scroll.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-scroll/src/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="12" column="87" selection-start-line="12" selection-start-column="87" selection-end-line="12" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/config/env.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/components/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/assets/img/common/top.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-back-top/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-back-top/src/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-nav-bar/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/m2/m2-vue/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="546">
-            <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-            <folding>
-              <element signature="e#1#32#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/m2/m2-vue/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/m2/m2-vue/dist/core/render.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/children/nav-bar/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/m2/m2-vue/src/core/render.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/config/app.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/components/tab-control/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue-mall-app/m2/m2-vue/src/core/route.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -587,20 +383,6 @@
     <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/children/recommend/index.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/children/swiper/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/components/product-item/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue-mall-app/src/components/product-list/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -622,16 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/children/nav-bar/index.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/app.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -646,6 +418,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/children/nav-bar/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/children/nav-bar/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/nav-bar/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="61" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/nav-bar/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-scroll/src/main.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -653,10 +453,223 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/components/product-item/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/config/api.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/services/home.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/services/product.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/utils/fetch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/children/swiper/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="28" column="25" lean-forward="true" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/swiper/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/swiper/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/children/recommend/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/mixins/check-data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/mixins/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/assets/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-shop/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-shop/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1256">
+          <caret line="63" column="3" lean-forward="true" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-info/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-image/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-image/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="31" column="3" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+          <folding>
+            <element signature="e#96#405#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        <state relative-caret-position="120">
+          <caret line="98" column="22" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="44" column="10" lean-forward="true" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+          <folding>
+            <element signature="e#336#395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/config/app.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-info/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/models/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-param/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-param/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
         </state>
       </provider>
     </entry>
