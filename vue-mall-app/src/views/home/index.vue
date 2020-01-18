@@ -18,12 +18,13 @@
 </template>
 
 <script>
-  import { EVENT_BUS_NAMES } from 'config/app.conf'
+  import { ImageLoadMixin, BackTopMixin } from 'mixins'
   import { getMultiData, getProductsData } from 'services/home.service'
   import { TabControl, ProductList } from 'components'
   import { NavBar, Swiper, Recommend, FeatureView } from './children'
 
   export default {
+    mixins: [ImageLoadMixin, BackTopMixin],
     data: () => ({
       banners: [],
       recommends: [],
@@ -35,7 +36,6 @@
       currentType: 'pop',
       tabOffsetTop: 0,
       currentScrollY: 0,
-      isShowBacktop: false,
       isShowTabControl: false
     }),
     computed: {
@@ -53,14 +53,14 @@
       this.getMultiData()
       this.getProductsData()
     },
-    mounted() {
-      this.loadImageRefresh()
-    },
     activated() {
       this.$refs.scroll.scrollTo(0, this.currentScrollY, 0).refresh()
     },
     deactivated() {
+      // 1.保存当前滚动位置
       this.currentScrollY = this.$refs.scroll.getScrollY()
+      // 2.取消全局事件监听
+      this.cancelImageListener()
     },
     methods: {
       getMultiData() {
@@ -84,20 +84,14 @@
       tabItemClick(type) {
         this.currentType = type
       },
-      backTopClick() {
-        this.$refs.scroll.scrollTop()
-      },
       contentScroll(position) {
         // 1.判断BackTop是否显示
-        this.isShowBacktop = -position.y > 1000
+        this.showBacktop(position)
         // 2.判断TabControl是否吸顶
         this.isShowTabControl = -position.y > this.tabOffsetTop
       },
       loadMoreData() {
         this.getProductsDataByType(this.currentType)
-      },
-      loadImageRefresh() {
-        this.$bus.$on(EVENT_BUS_NAMES.PRODUCT_IMAGE_LOAD, this.$bus.$debounce(this.$refs.scroll.refresh))
       },
       swiperImageLoad() {
         this.tabOffsetTop = this.$refs.tabControl.$el.offsetTop

@@ -6,6 +6,7 @@ export default getDataApi({
     products: '/home/data'
   },
   product: {
-    detail: '/detail'
+    detail: '/detail',
+    recommend: '/recommend'
   }
 }, '/api/hy')

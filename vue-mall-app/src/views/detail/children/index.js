@@ -4,3 +4,4 @@ export const ProductInfo = require('./product-info').default
 export const ProductShop = require('./product-shop').default
 export const ProductImage = require('./product-image').default
 export const ProductParam = require('./product-param').default
+export const ProductComment = require('./product-comment').default

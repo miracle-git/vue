@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import { DataEvent } from 'm2-core'
+import filters from '../filters'
 
 Vue.config.productionTip = false
 
@@ -19,6 +20,8 @@ export function render(rootApp, options = {}) {
   // 为Vue实例挂载防抖节流
   Vue.prototype.$bus.$throttle = DataEvent.throttle
   Vue.prototype.$bus.$debounce = DataEvent.debounce
+  // 为Vue注册全局过滤器
+  filters.map(filter => Vue.filter(filter.name, filter.rule))
   // 在App渲染之前执行初始化
   const { router, store, init } = options
   typeof init === 'function' && init(Vue)

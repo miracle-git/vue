@@ -1,6 +1,6 @@
 <template>
   <div class="product-item" @click="itemClick">
-    <img :src="item.show.img" alt="" @load="imageItemLoad">
+    <img :src="productImg" alt="" @load="imageItemLoad">
     <div class="item-info">
       <p class="item-title ellipsis ">{{item.title}}</p>
       <span class="item-price">{{item.price}}</span>
@@ -22,12 +22,17 @@
         }
       }
     },
+    computed: {
+      productImg() {
+        return this.item.image || this.item.show.img
+      }
+    },
     methods: {
       imageItemLoad() {
         this.$bus.$emit(EVENT_BUS_NAMES.PRODUCT_IMAGE_LOAD)
       },
       itemClick() {
-        this.$router.push(`/detail/${this.item.iid}`)
+        this.item.iid && this.$router.push(`/detail/${this.item.iid}`)
       }
     }
   }

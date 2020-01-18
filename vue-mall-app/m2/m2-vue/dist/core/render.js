@@ -9,6 +9,8 @@ var _vue = _interopRequireDefault(require("vue"));
 
 var _m2Core = require("m2-core");
 
+var _filters = _interopRequireDefault(require("../filters"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _vue.default.config.productionTip = false;
@@ -31,7 +33,12 @@ function render(rootApp) {
   _vue.default.prototype.$bus = new _vue.default(); // 为Vue实例挂载防抖节流
 
   _vue.default.prototype.$bus.$throttle = _m2Core.DataEvent.throttle;
-  _vue.default.prototype.$bus.$debounce = _m2Core.DataEvent.debounce; // 在App渲染之前执行初始化
+  _vue.default.prototype.$bus.$debounce = _m2Core.DataEvent.debounce; // 为Vue注册全局过滤器
+
+  _filters.default.map(function (filter) {
+    return _vue.default.filter(filter.name, filter.rule);
+  }); // 在App渲染之前执行初始化
+
 
   var router = options.router,
       store = options.store,
