@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { DataEvent } from 'm2-core'
+import { DataType, DataEvent } from 'm2-core'
 import filters from '../filters'
 
 Vue.config.productionTip = false
@@ -24,7 +24,7 @@ export function render(rootApp, options = {}) {
   filters.map(filter => Vue.filter(filter.name, filter.rule))
   // 在App渲染之前执行初始化
   const { router, store, init } = options
-  typeof init === 'function' && init(Vue)
+  DataType.isFunction(init) && init(Vue)
 
   return new Vue({
     router,

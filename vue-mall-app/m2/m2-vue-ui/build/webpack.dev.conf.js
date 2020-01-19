@@ -28,7 +28,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     clientLogLevel: 'warning',
     historyApiFallback: {
       rewrites: [
-        { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'base.css.html') },
+        { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'base.less.css.html') },
       ],
     },
     hot: true,
@@ -56,8 +56,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      filename: 'base.css.html',
-      template: 'base.css.html',
+      filename: 'base.less.css.html',
+      template: 'base.less.css.html',
       inject: true
     }),
     // copy custom static assets

@@ -1,0 +1,182 @@
+@import "./normalize.less";
+
+/*:root -> 获取根元素html*/
+:root {
+  --color-text: #666;
+  --color-hl-text: #ff5777;
+  --color-tint: #ff8198;
+  --color-bd: #f2f5f8;
+  --color-bg: #fff;
+  --font-size: 14px;
+  --line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*点击元素清除默认高亮*/
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  user-select: none; /* 禁止用户鼠标在页面上选中文字/图片等 */
+  -webkit-tap-highlight-color: transparent; /* webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色，颜色用数值调节 */
+  background: var(--color-bg);
+  color: var(--color-text);
+  /* rem vw/vh */
+  width: 100vw;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  border: none;
+  vertical-align: middle;
+}
+
+a, img {
+  /*清除默认链接，图片长按的下拉菜单*/
+  -webkit-touch-callout: none;
+}
+
+input, textarea {
+  outline: none;
+  /*清除默认在ios上的文本框外观*/
+  -webkit-appearance: none;
+}
+
+textarea {
+  resize: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*.clear-fix::after {*/
+/*  clear: both;*/
+/*  content: '';*/
+/*  display: block;*/
+/*  width: 0;*/
+/*  height: 0;*/
+/*  visibility: hidden;*/
+/*}*/
+
+.clear-fix::before,
+.clear-fix::after {
+  content: "";
+  display: table;
+}
+
+.clear-fix::after {
+  clear: both;
+}
+
+.clear-fix {
+  *zoom: 1;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#indicator {
+  display: none;
+  .mask {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 9999;
+    filter: alpha(Opacity=75);
+    -moz-opacity: .75;
+    opacity: .75;
+    .spinner {
+      position: absolute;
+      transform: translateY(-50px);
+      i {
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #18ffff;
+        &:nth-child(1) {
+          top: 25px;
+          left: 0;
+          -webkit-animation: spinner 1s ease 0s infinite;
+        }
+        &:nth-child(2) {
+          top: 17px;
+          left: 17px;
+          -webkit-animation: spinner 1s ease -.12s infinite;
+        }
+        &:nth-child(3) {
+          top: 0;
+          left: 25px;
+          -webkit-animation: spinner 1s ease -.24s infinite;
+        }
+        &:nth-child(4) {
+          top: -17px;
+          left: 17px;
+          -webkit-animation: spinner 1s ease -.36s infinite;
+        }
+        &:nth-child(5) {
+          top: -25px;
+          left: 0;
+          -webkit-animation: spinner 1s ease -.48s infinite;
+        }
+        &:nth-child(6) {
+          top: -17px;
+          left: -17px;
+          -webkit-animation: spinner 1s ease -.6s infinite;
+        }
+        &:nth-child(7) {
+          top: 0;
+          left: -25px;
+          -webkit-animation: spinner 1s ease -.72s infinite;
+        }
+        &:nth-child(8) {
+          top: 17px;
+          left: -17px;
+          -webkit-animation: spinner 1s ease -.84s infinite;
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes spinner {
+  50% {
+    transform: scale(.4);
+    opacity: .3;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
