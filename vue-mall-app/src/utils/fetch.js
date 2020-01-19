@@ -21,7 +21,7 @@ const _fetch_core = {
     if (options.key) {
       if (DataType.isArray(res.data)) {
         res.data.map(item => item._key = DataUtil.randomString(options.keyLen))
-      } else if (DataType.isArray(res.result[DEFAULT_FETCH_OPTIONS.itemsName])) {
+      } else if (DataType.isArray(res.data[DEFAULT_FETCH_OPTIONS.itemsName])) {
         res.data[DEFAULT_FETCH_OPTIONS.itemsName].map(item => item._key = DataUtil.randomString(options.keyLen))
       }
     }
