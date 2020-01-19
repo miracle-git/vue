@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9ca5f97f-2267-4cfb-8827-6f095d320515" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/vue-mall-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/assets/css/base.less" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/assets/css/base.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue-mall-app/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="189">
+              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -175,12 +173,6 @@
               <item name="vue" type="462c0819:PsiDirectoryNode" />
               <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -228,12 +220,12 @@
       <option name="presentableId" value="Default" />
       <updated>1579145385142</updated>
       <workItem from="1579145386632" duration="75194000" />
-      <workItem from="1579351605661" duration="34234000" />
+      <workItem from="1579351605661" duration="34783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109428000" />
+    <option name="totallyTimeSpent" value="109977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1280" height="741" extended-state="6" />
@@ -632,6 +624,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-601">
+          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vue-mall-app/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -642,17 +641,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-601">
-          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue-mall-app/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="189">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>

@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/miracle-git/fts.git"
+    "url": "https://github.com/miracle-git/vue.git"
   },
   "scripts": {
     "serve": "vue-cli-service serve --mode loc",
