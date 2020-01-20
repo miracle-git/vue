@@ -100,8 +100,14 @@ ul {
   text-overflow: ellipsis;
 }
 
+.ellipsis-line(@line:2) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: @line;
+  -webkit-box-orient: vertical;
+}
+
 #indicator {
-  display: none;
   .mask {
     position: fixed;
     display: flex;

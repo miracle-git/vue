@@ -11,14 +11,15 @@
       <product-list :items="recommends" ref="recommend"/>
     </m2-scroll>
     <m2-back-top @click.native="backTopClick" v-show="isShowBacktop"/>
-    <bottom-bar/>
+    <bottom-bar @addToCart="addToCart"/>
   </div>
 </template>
 
 <script>
   import { ImageLoadMixin, BackTopMixin } from 'mixins'
+  import { STORE_TYPES } from 'config/app.conf'
   import { getProductDetail } from 'services/product.service'
-  import { ProductInfoModel, ProductShopModel, ProductParamModel } from 'models/product'
+  import { ProductInfoModel, ProductShopModel, ProductParamModel, ProductCartModel } from 'models'
   import { ProductList } from 'components'
   import { NavBar, BottomBar, Swiper, ProductInfo, ProductShop, ProductImage, ProductParam, ProductComment } from './children'
 
@@ -52,7 +53,7 @@
           const { itemInfo, columns, shopInfo, detailInfo, itemParams, rate } = product
           this.banners = itemInfo.topImages
           this.images = detailInfo
-          this.product = new ProductInfoModel(itemInfo, columns, shopInfo.services)
+          this.product = new ProductInfoModel(this.id, itemInfo, columns, shopInfo.services)
           this.shop = new ProductShopModel(shopInfo)
           this.params = new ProductParamModel(itemParams.info, itemParams.rule)
           this.comment = rate.cRate > 0 ? rate.list[0] : {}
@@ -83,6 +84,10 @@
         const titles = ['product', 'param', 'comment', 'recommend']
         titles.map(item => this.navTitleTopYs.push(this.$refs[item] ? this.$refs[item].$el.offsetTop : 0))
         this.navTitleTopYs.push(Number.MAX_SAFE_INTEGER)
+      },
+      addToCart() {
+        const product = new ProductCartModel(this.banners, this.product)
+        this.$store.commit(STORE_TYPES.ADD_TO_CART, product)
       }
     },
     components: {

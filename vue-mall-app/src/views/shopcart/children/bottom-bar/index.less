@@ -1,0 +1,40 @@
+.bottom-bar {
+  position: fixed;
+  display: flex;
+  height: 40px;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  font-size: 18px;
+  background: #fff;
+  .check-all {
+    position: absolute;
+    display: flex;
+    left: 10px;
+    top: 10px;
+    .check-button {
+      margin-right: 2px;
+    }
+  }
+  .total-price {
+    flex: 1;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    box-shadow: 0 -1px 1px rgba(100, 100, 100, 0.2);
+    span {
+      color: var(--color-hl-text);
+    }
+  }
+  .checkout {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    background-color: var(--color-bg-red);
+    &.disabled {
+      background-color: #ccc;
+    }
+  }
+}

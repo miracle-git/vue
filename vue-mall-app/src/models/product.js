@@ -1,5 +1,6 @@
 export class ProductInfoModel {
-  constructor(itemInfo, columns, services) {
+  constructor(id, itemInfo, columns, services) {
+    this.id = id
     this.title = itemInfo.title
     this.desc = itemInfo.desc
     this.newPrice = itemInfo.price

@@ -1,0 +1,50 @@
+@import "~assets/css/base.less";
+
+.cart-item {
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px dashed var(--color-bd);
+  .item-checked {
+    display: flex;
+    padding: 0 4px;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-img {
+    padding: 5px;
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 5px;
+    }
+  }
+  .item-info {
+    position: relative;
+    overflow: hidden;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #333;
+    .item-title {
+      .ellipsis-line;
+    }
+    .item-desc {
+      margin-top: 5px;
+      font-size: 13px;
+      color: #666;
+    }
+    .item-other {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 5px;
+      .item-price {
+        color: var(--color-hl-text);
+      }
+      .item-count {
+        color: #999;
+        font-size: 13px;
+        margin-top: 2px;
+      }
+    }
+  }
+}

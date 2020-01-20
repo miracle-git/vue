@@ -6,13 +6,11 @@
 </template>
 
 <script>
-  import { DevTools } from 'm2-vue'
   import { TabBar } from 'components'
 
   export default {
     name: 'app',
     components: {
-      DevTools,
       TabBar
     }
   }

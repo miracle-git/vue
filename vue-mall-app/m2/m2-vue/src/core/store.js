@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import VueX from 'vuex'
-import { Devtools, devtoolsMiddleware } from 'vuex-devtools'
-import { IsDev } from 'm2-core'
 
 /**
  * @method 获取Vuex的Store对象
@@ -11,18 +9,9 @@ import { IsDev } from 'm2-core'
 export function getStore(options = {}) {
   Vue.use(VueX)
 
-  const { devtools = false, ...config } = options
-  const { state, mutations, getters, actions, modules } = config
-  const middlewares = []
-
-  if (devtools || IsDev) {
-    middlewares.push(devtoolsMiddleware)
-  }
+  const { state, mutations, getters, actions, modules } = options
 
   return new VueX.Store({
-    state, mutations, getters, actions, modules, middlewares
+    state, mutations, getters, actions, modules
   })
 }
-
-// 导出Vuex-DevTools在app.vue中使用
-export const DevTools = Devtools
