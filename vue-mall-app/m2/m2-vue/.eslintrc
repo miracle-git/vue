@@ -1,0 +1,15 @@
+{
+  "env": {
+    "commonjs": true,
+    "amd": true
+  },
+  "rules": {
+    "camelcase": "off",
+    "indent": "off",
+    "valid-typeof": "off",
+    "no-sequences": "off",
+    "no-trailing-spaces": "off",
+    "operator-linebreak": "off",
+    "space-before-function-paren": "off"
+  }
+}

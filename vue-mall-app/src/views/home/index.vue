@@ -86,7 +86,7 @@
       },
       contentScroll(position) {
         // 1.判断BackTop是否显示
-        this.showBacktop(position)
+        this.showBacktop(-position.y)
         // 2.判断TabControl是否吸顶
         this.isShowTabControl = -position.y > this.tabOffsetTop
       },

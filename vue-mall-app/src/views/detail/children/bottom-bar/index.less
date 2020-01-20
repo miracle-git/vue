@@ -1,0 +1,52 @@
+.bottom-bar {
+  position: fixed;
+  display: flex;
+  height: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 -1px 1px rgba(100,100,100, .2);
+  background: #f6f6f6;
+  .bar-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    > div {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+    }
+    &.bar-left {
+      font-size: 13px;
+      .icon {
+        display: block;
+        width: 22px;
+        height: 22px;
+        margin-bottom: 2px;
+        background-image: url("~assets/img/detail/bottom.png");
+        background-size: cover;
+        &.collect {
+          background-position: 0 0;
+        }
+        &.service {
+          background-position: 0 -54px;
+        }
+        &.shop {
+          background-position: 0 -98px;
+        }
+      }
+    }
+    &.bar-right {
+      line-height: 50px;
+      font-size: 15px;
+      color: #fff;
+      .cart {
+        background-color: var(--color-bg-orange);
+      }
+      .buy {
+        background-color: var(--color-bg-red);
+      }
+    }
+  }
+}

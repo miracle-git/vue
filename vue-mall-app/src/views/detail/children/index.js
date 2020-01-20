@@ -1,4 +1,5 @@
 export const NavBar = require('./nav-bar').default
+export const BottomBar = require('./bottom-bar').default
 export const Swiper = require('./swiper').default
 export const ProductInfo = require('./product-info').default
 export const ProductShop = require('./product-shop').default

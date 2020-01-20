@@ -7,7 +7,7 @@ export default {
       this.$refs.scroll.scrollTop()
     },
     showBacktop(position, distance = 1000) {
-      this.isShowBacktop = -position.y > distance
+      this.isShowBacktop = position > distance
     }
   }
 }
