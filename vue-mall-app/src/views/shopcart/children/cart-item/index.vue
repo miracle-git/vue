@@ -4,7 +4,7 @@
       <check-button :checked="data.checked" @click.native="checkItemClick"/>
     </div>
     <div class="item-img">
-      <img :src="data.image" alt=""/>
+      <img v-lazy="data.image" alt=""/>
     </div>
     <div class="item-info">
       <div class="item-title">{{data.title}}</div>
