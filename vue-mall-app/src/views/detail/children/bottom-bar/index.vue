@@ -15,18 +15,36 @@
       </div>
     </div>
     <div class="bar-item bar-right">
-      <div class="cart" @click="addToCart">加入购物车</div>
-      <div class="buy">购买</div>
+      <div class="cart" @click="add">加入购物车</div>
+      <div class="buy" @click="buy">购买</div>
     </div>
   </div>
 </template>
 
 <script>
+  import { mapActions } from 'vuex'
+
   export default {
     name: 'bottom-bar',
+    props: {
+      data: {
+        type: Object,
+        default() {
+          return []
+        }
+      }
+    },
     methods: {
-      addToCart() {
-        this.$emit('addToCart')
+      ...mapActions(['addToCart', 'addToCartAsync']),
+      add() {
+        // this.addToCart(this.data)
+        this.addToCartAsync(this.data).then(res => this.$toast(res))
+      },
+      buy() {
+        this.$loading()
+        setTimeout(() => {
+          this.$loading.hide()
+        }, 2000)
       }
     }
   }

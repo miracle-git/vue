@@ -4,7 +4,7 @@ import App from './views/app'
 import router from './router'
 import store from './store'
 
-render(App, {
+export default render(App, {
   router,
   store,
   init: Vue => {

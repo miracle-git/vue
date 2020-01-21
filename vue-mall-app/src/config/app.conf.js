@@ -9,10 +9,6 @@ export const EVENT_BUS_NAMES = {
   PRODUCT_IMAGE_LOAD: 'PRODUCT_IMAGE_LOAD'
 }
 
-export const STORE_TYPES = {
-  ADD_TO_CART: 'ADD_TO_CART'
-}
-
 export const DETAIL_NAV_BAR_DATA = [
   { key: 'product', value: '商品' },
   { key: 'params', value: '参数' },

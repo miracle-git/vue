@@ -11,13 +11,12 @@
       <product-list :items="recommends" ref="recommend"/>
     </m2-scroll>
     <m2-back-top @click.native="backTopClick" v-show="isShowBacktop"/>
-    <bottom-bar @addToCart="addToCart"/>
+    <bottom-bar :data="cart"/>
   </div>
 </template>
 
 <script>
   import { ImageLoadMixin, BackTopMixin } from 'mixins'
-  import { STORE_TYPES } from 'config/app.conf'
   import { getProductDetail } from 'services/product.service'
   import { ProductInfoModel, ProductShopModel, ProductParamModel, ProductCartModel } from 'models'
   import { ProductList } from 'components'
@@ -39,6 +38,9 @@
     computed: {
       id() {
         return this.$route.params.id
+      },
+      cart() {
+        return new ProductCartModel(this.banners, this.product)
       }
     },
     created() {
@@ -84,10 +86,6 @@
         const titles = ['product', 'param', 'comment', 'recommend']
         titles.map(item => this.navTitleTopYs.push(this.$refs[item] ? this.$refs[item].$el.offsetTop : 0))
         this.navTitleTopYs.push(Number.MAX_SAFE_INTEGER)
-      },
-      addToCart() {
-        const product = new ProductCartModel(this.banners, this.product)
-        this.$store.commit(STORE_TYPES.ADD_TO_CART, product)
       }
     },
     components: {
