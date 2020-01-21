@@ -6,6 +6,8 @@ import M2SmartRoute from './m2-smart-route'
 import M2Scroll from './m2-scroll'
 import M2Swiper from './m2-swiper'
 import M2SwiperItem from './m2-swiper-item'
+import M2Loading from './m2-loading'
+import M2Toast from './m2-toast'
 
 const components = [
   M2BackTop,
@@ -28,7 +30,9 @@ const install = (Vue, opts = {}) => {
   // Vue.use(Loading.directive)
 
   // Vue.prototype.$loading = Loading.service
-  // Vue.prototype.$toast = Toast
+  Vue.prototype.$loading = M2Loading
+  Vue.prototype.$loading.hide = M2Loading.hide
+  Vue.prototype.$toast = M2Toast
 }
 
 // 判断是否是直接引入文件
@@ -47,5 +51,7 @@ export default {
   M2SmartRoute,
   M2Scroll,
   M2Swiper,
-  M2SwiperItem
+  M2SwiperItem,
+  M2Loading,
+  M2Toast
 }

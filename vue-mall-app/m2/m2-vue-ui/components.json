@@ -7,5 +7,7 @@
   "m2-scroll": "./packages/m2-scroll",
   "m2-swiper": "./packages/m2-swiper",
   "m2-swiper-item": "./packages/m2-swiper-item",
+  "m2-loading": "./packages/m2-loading",
+  "m2-toast": "./packages/m2-toast",
   "base": "./packages/index.js"
 }
