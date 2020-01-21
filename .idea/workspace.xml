@@ -1,54 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ca5f97f-2267-4cfb-8827-6f095d320515" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-loading/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-loading/src/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-loading/src/main.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-toast/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-toast/src/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/m2-toast/src/main.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/store/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/components.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/components.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/base.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/base.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-back-top.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-back-top.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-back-top.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-back-top.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-nav-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-nav-bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-nav-bar.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-nav-bar.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-scroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-scroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-scroll.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-scroll.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-smart-route.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-smart-route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-smart-route.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-smart-route.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper-item.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper-item.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-swiper.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar-item.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar-item.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/m2-tab-bar.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/theme/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/theme/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/theme/base.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/lib/theme/base.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue-ui/packages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue/dist/core/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue/dist/core/render.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue/dist/core/route.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue/dist/core/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue/dist/filters/date-format.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/m2/m2-vue/dist/filters/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/config/app.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/config/app.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/store/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/store/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/utils/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/utils/fetch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/bottom-bar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/bottom-bar/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/detail/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/shopcart/children/bottom-bar/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/shopcart/children/bottom-bar/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/shopcart/children/bottom-bar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/shopcart/children/bottom-bar/index.vue" afterDir="false" />
-    </list>
+    <list default="true" id="9ca5f97f-2267-4cfb-8827-6f095d320515" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -101,7 +54,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -248,16 +205,15 @@
       <updated>1579145385142</updated>
       <workItem from="1579145386632" duration="75194000" />
       <workItem from="1579351605661" duration="61962000" />
-      <workItem from="1579576911811" duration="18324000" />
+      <workItem from="1579576911811" duration="18496000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155480000" />
+    <option name="totallyTimeSpent" value="155652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -653,7 +609,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
