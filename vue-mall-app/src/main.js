@@ -7,6 +7,10 @@ import store from './store'
 export default render(App, {
   router,
   store,
+  lazy: {
+    preLoad: 1,
+    loading: require('assets/img/common/loading.gif')
+  },
   init: Vue => {
     Vue.use(VueUI)
   }

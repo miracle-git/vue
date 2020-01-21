@@ -1,5 +1,7 @@
 import Vue from 'vue'
-import { DataEvent } from 'm2-core'
+import FastClick from 'fastclick'
+import VueLazyLoad from 'vue-lazyload'
+import { DataType, DataEvent } from 'm2-core'
 import filters from '../filters'
 
 Vue.config.productionTip = false
@@ -22,8 +24,13 @@ export function render(rootApp, options = {}) {
   Vue.prototype.$bus.$debounce = DataEvent.debounce
   // 为Vue注册全局过滤器
   filters.map(filter => Vue.filter(filter.name, filter.rule))
+  // 获取配置参数
+  const { router, store, init, fastclick = true, lazy = false } = options
+  // 解决移动端的300ms延迟问题
+  fastclick && FastClick.attach(document.body)
+  // 启动图片懒加载
+  DataType.isObject(lazy) && Vue.use(VueLazyLoad, lazy)
   // 在App渲染之前执行初始化
-  const { router, store, init } = options
   typeof init === 'function' && init(Vue)
 
   return new Vue({

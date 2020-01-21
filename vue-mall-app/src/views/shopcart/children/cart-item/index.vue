@@ -10,7 +10,7 @@
       <div class="item-title">{{data.title}}</div>
       <div class="item-desc ellipsis">商品描述：{{data.desc}}</div>
       <div class="item-other">
-        <div class="item-price left">￥{{data.price}}</div>
+        <div class="item-price left">{{data.price | currency }}</div>
         <div class="item-count right">{{data.count}}件</div>
       </div>
     </div>

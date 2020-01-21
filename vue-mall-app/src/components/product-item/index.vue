@@ -1,9 +1,9 @@
 <template>
   <div class="product-item" @click="itemClick">
-    <img :src="productImg" alt="" @load="imageItemLoad">
+    <img v-lazy="productImg" alt="" @load="imageItemLoad">
     <div class="item-info">
       <p class="item-title ellipsis ">{{item.title}}</p>
-      <span class="item-price">{{item.price}}</span>
+      <span class="item-price">{{item.price | currency }}</span>
       <span class="item-collect">{{item.cfav}}</span>
     </div>
   </div>

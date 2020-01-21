@@ -2,16 +2,19 @@
   <div id="app">
     <m2-smart-route/>
     <tab-bar/>
+    <app-icon/>
+    <svg-icon/>
   </div>
 </template>
 
 <script>
-  import { TabBar } from 'components'
+  import { TabBar, SvgIcon } from 'components'
 
   export default {
     name: 'app',
     components: {
-      TabBar
+      TabBar,
+      SvgIcon
     }
   }
 </script>

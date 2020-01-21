@@ -15,3 +15,14 @@ export const DETAIL_NAV_BAR_DATA = [
   { key: 'comment', value: '评论' },
   { key: 'recommend', value: '推荐' }
 ]
+
+export const PROFILE_ORDER_LIST = [
+  { icon: '#weixin', color: '#ff8198', info: '我的消息' },
+  { icon: '#point', color: '#fc7b53', info: '积分商城' },
+  { icon: '#vip', color: '#ffc636', info: '会员卡' }
+]
+
+export const PROFILE_SERVICE_LIST = [
+  { icon: '#order', color: '#ff8198', info: '我的购物车' },
+  { icon: '#download', color: '#ff8198', info: '下载购物APP' }
+]

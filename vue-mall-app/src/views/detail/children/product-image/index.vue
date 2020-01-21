@@ -7,7 +7,7 @@
     </div>
     <div class="product-key">{{detail.key}}</div>
     <div class="product-img-list">
-      <img v-for="(item, index) in detail.list" :key="index" :src="item" @load="detailImageLoad" alt=""/>
+      <img v-for="(item, index) in detail.list" :key="index" v-lazy="item" @load="detailImageLoad" alt=""/>
     </div>
   </div>
 </template>

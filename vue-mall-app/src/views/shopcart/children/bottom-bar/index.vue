@@ -1,7 +1,7 @@
 <template>
   <div class="bottom-bar">
     <span class="check-all" @click="checkAllItems" ><check-button :checked="checkedAll"/>全选</span>
-    <span class="total-price">￥{{totalPrice}}</span>
+    <span class="total-price">{{totalPrice | currency}}</span>
     <span class="checkout right" :class="{'disabled':!checkedLength}">去结算<span v-if="checkedLength">({{checkedLength}})</span></span>
   </div>
 </template>
