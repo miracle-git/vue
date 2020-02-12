@@ -8,5 +8,10 @@ export default getDataApi({
   product: {
     detail: '/detail',
     recommend: '/recommend'
+  },
+  category: {
+    all: '/category',
+    sub: '/subcategory',
+    detail: '/subcategory/detail'
   }
 }, '/api/hy')

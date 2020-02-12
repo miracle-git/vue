@@ -6,3 +6,4 @@ export const ProductShop = require('./product-shop').default
 export const ProductImage = require('./product-image').default
 export const ProductParam = require('./product-param').default
 export const ProductComment = require('./product-comment').default
+export const ProductRecommend = require('./product-recommend').default

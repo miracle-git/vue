@@ -8,7 +8,7 @@
       <product-image :data="images" @detailImageLoad="detailImageLoad"/>
       <product-param :data="params" ref="param"/>
       <product-comment :data="comment" ref="comment"/>
-      <product-list :items="recommends" ref="recommend"/>
+      <product-recommend :items="recommends" ref="recommend"/>
     </m2-scroll>
     <m2-back-top @click.native="backTopClick" v-show="isShowBacktop"/>
     <bottom-bar :data="cart"/>
@@ -19,8 +19,7 @@
   import { ImageLoadMixin, BackTopMixin } from 'mixins'
   import { getProductDetail } from 'services/product.service'
   import { ProductInfoModel, ProductShopModel, ProductParamModel, ProductCartModel } from 'models'
-  import { ProductList } from 'components'
-  import { NavBar, BottomBar, Swiper, ProductInfo, ProductShop, ProductImage, ProductParam, ProductComment } from './children'
+  import { NavBar, BottomBar, Swiper, ProductInfo, ProductShop, ProductImage, ProductParam, ProductComment, ProductRecommend } from './children'
 
   export default {
     mixins: [ImageLoadMixin, BackTopMixin],
@@ -97,7 +96,7 @@
       ProductImage,
       ProductParam,
       ProductComment,
-      ProductList
+      ProductRecommend
     }
   }
 </script>

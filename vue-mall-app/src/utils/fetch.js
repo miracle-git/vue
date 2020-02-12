@@ -5,6 +5,9 @@ import env from 'config/env.conf'
 const _fetch_core = {
   _check: (res) => {
     let result = {}
+    if (DataType.isArray(res)) {
+      return { success: true, data: res }
+    }
     if (res.success || res.status.code === 1001) {
       result = { success: true, data: res.data || res.result }
     } else {

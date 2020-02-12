@@ -30,7 +30,7 @@
       data: {
         type: Object,
         default() {
-          return []
+          return {}
         }
       }
     },

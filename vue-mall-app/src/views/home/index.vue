@@ -18,13 +18,13 @@
 </template>
 
 <script>
-  import { ImageLoadMixin, BackTopMixin } from 'mixins'
+  import { ImageLoadMixin, BackTopMixin, TabControlMixin } from 'mixins'
   import { getMultiData, getProductsData } from 'services/home.service'
   import { TabControl, ProductList } from 'components'
   import { NavBar, Swiper, Recommend, FeatureView } from './children'
 
   export default {
-    mixins: [ImageLoadMixin, BackTopMixin],
+    mixins: [ImageLoadMixin, BackTopMixin, TabControlMixin],
     data: () => ({
       banners: [],
       recommends: [],
@@ -33,7 +33,6 @@
         new: { page: 0, text: '新款', list: [] },
         sell: { page: 0, text: '精选', list: [] }
       },
-      currentType: 'pop',
       tabOffsetTop: 0,
       currentScrollY: 0,
       isShowTabControl: false
@@ -80,9 +79,6 @@
           // 启动加载更多
           this.$refs.scroll.finishPullUp()
         })
-      },
-      tabItemClick(type) {
-        this.currentType = type
       },
       contentScroll(position) {
         // 1.判断BackTop是否显示
