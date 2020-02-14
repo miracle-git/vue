@@ -1,0 +1,44 @@
+{
+  "name": "vue-xiaomi-app",
+  "version": "1.0.0",
+  "author": "Miracle He",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miracle-git/vue.git"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve --mode loc",
+    "build:dev": "vue-cli-service build --mode dev",
+    "build:prd": "vue-cli-service build --mode prd",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.4.3",
+    "m2-core": "^1.4.2",
+    "m2-vue": "^1.0.2",
+    "m2-vue-ui": "^1.0.2",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-plugin-router": "^4.1.0",
+    "@vue/cli-plugin-vuex": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-px-to-viewport": "^1.1.1",
+    "postcss-url": "^8.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "description": "\"\""
+}

@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ca5f97f-2267-4cfb-8827-6f095d320515" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/services/category.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/category/children/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/category/children/nav-bar/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/category/children/nav-bar/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/category/children/tab-category-detail/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/category/children/tab-category-detail/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/category/children/tab-content/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/category/children/tab-content/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/category/children/tab-menu/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/category/children/tab-menu/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/category/children/tab-sub-category/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/category/children/tab-sub-category/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/category/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-recommend/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/product-recommend/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/components/product-item/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/components/product-item/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/config/api.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/config/api.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/mixins/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/mixins/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/models/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/services/data.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/mixins/tab-control.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/utils/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/utils/fetch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/category/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/category/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/bottom-bar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/bottom-bar/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/children/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/detail/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/detail/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-mall-app/src/views/home/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-mall-app/src/views/home/index.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,46 +15,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/category/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-              <folding>
-                <element signature="e#359#415#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/category/children/tab-content/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/index.vue">
+        <entry file="file://$PROJECT_DIR$/vue-mall-app/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+            <state relative-caret-position="168">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding>
-                <element signature="e#671#724#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="87" column="8" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="87" selection-end-column="8" />
-              <folding>
-                <element signature="e#757#827#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -161,45 +99,17 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="741" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-mall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -256,16 +166,16 @@
       <workItem from="1579145386632" duration="75194000" />
       <workItem from="1579351605661" duration="61962000" />
       <workItem from="1579576911811" duration="37156000" />
-      <workItem from="1581310765743" duration="22347000" />
+      <workItem from="1581310765743" duration="23420000" />
+      <workItem from="1581528604542" duration="557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196659000" />
+    <option name="totallyTimeSpent" value="198289000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="23" width="1280" height="743" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="743" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -309,16 +219,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="17" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue-mall-app/public/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -388,9 +288,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/services/data.service.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/services/data.service.js" />
     <entry file="file://$PROJECT_DIR$/vue-mall-app/src/services/product.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -451,20 +349,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/components/grid-view/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/components/grid-view/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/components/grid-view/index.less" />
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/components/grid-view/index.vue" />
     <entry file="file://$PROJECT_DIR$/vue-mall-app/src/config/env.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -621,6 +507,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/models/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/category/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+          <folding>
+            <element signature="e#359#415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/category/children/tab-content/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1130">
+          <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+          <folding>
+            <element signature="e#671#724#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/home/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -631,36 +551,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/models/product.js">
+    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/category/children/tab-content/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/category/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+        <state relative-caret-position="168">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding>
-            <element signature="e#359#415#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-mall-app/src/views/detail/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-          <folding>
-            <element signature="e#671#724#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
