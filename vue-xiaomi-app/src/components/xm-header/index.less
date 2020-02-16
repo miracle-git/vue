@@ -13,20 +13,12 @@
           margin-left: -55px;
           transition: margin .2s;
         }
-        &:before, &:after {
-          display: inline-block;
-          content: '';
-          width: 55px;
-          height: 55px;
-          background: no-repeat center;
-          background-size: contain;
-        }
         &:before {
-          background-image: url("~assets/img/header/mi-logo.png");
+          .icon-bg(55px, 55px, "~assets/img/header/mi-logo.png");
           transition: margin .2s;
         }
         &:after {
-          background-image: url("~assets/img/header/mi-home.png");
+          .icon-bg(55px, 55px, "~assets/img/header/mi-home.png");
         }
       }
     }
@@ -60,12 +52,8 @@
           height: 40px;
         }
         .search {
-          display: inline-block;
-          width: 18px;
-          height: 18px;
+          .icon-bg(18px, 18px, "~assets/img/icons/icon-search.png");
           margin-left: 15px;
-          background: url("~assets/img/icons/icon-search.png") no-repeat center;
-          background-size: contain;
         }
       }
     }

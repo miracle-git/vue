@@ -1,0 +1,21 @@
+.ellipsis-line(@line:2) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: @line;
+  -webkit-box-orient: vertical;
+}
+
+.flex-center(@h:center, @v:center) {
+  display: flex;
+  justify-content: @h;
+  align-items: @v;
+}
+
+.icon-bg(@w, @h, @url, @size:contain) {
+  display: inline-block;
+  content: '';
+  width: @w;
+  height: @h;
+  background: url(@url) no-repeat center;
+  background-size: @size;
+}
