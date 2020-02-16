@@ -3,13 +3,13 @@
 /*:root -> 获取根元素html*/
 :root {
   --color-text: #666;
-  --color-hl-text: #ff5777;
+  --color-hl-text: #ff6600;
   --color-tint: #ff8198;
-  --color-bd: #f2f5f8;
+  --color-bd: #e0e0e0;
   --color-bg: #fff;
   --color-bg-orange: #fb8c00;
   --color-bg-red: #f50057;
-  --font-size: 14px;
+  --font-size: 12px;
   --line-height: 1.5;
 }
 
@@ -29,8 +29,14 @@ body {
   -webkit-tap-highlight-color: transparent; /* webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色，颜色用数值调节 */
   background: var(--color-bg);
   color: var(--color-text);
+  font-size: var(--font-size);
   /* rem vw/vh */
-  width: 100vw;
+  // width: 100vw;
+}
+
+.container {
+  width: 1226px;
+  margin: 0 auto;
 }
 
 a {

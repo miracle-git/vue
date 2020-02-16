@@ -1,0 +1,75 @@
+.xm-header {
+  .container {
+    display: flex;
+    height: 110px;
+    justify-content: space-between;
+    align-items: center;
+    .header-logo {
+      width: 55px;
+      height: 55px;
+      background-color: var(--color-hl-text);
+      a {
+        display: inline-block;
+        width: 110px;
+        &:hover:before {
+          margin-left: -55px;
+          transition: margin .2s;
+        }
+        &:before, &:after {
+          display: inline-block;
+          content: '';
+          width: 55px;
+          height: 55px;
+          background: no-repeat center;
+          background-size: contain;
+        }
+        &:before {
+          background-image: url("~assets/img/header/mi-logo.png");
+          transition: margin .2s;
+        }
+        &:after {
+          background-image: url("~assets/img/header/mi-home.png");
+        }
+      }
+    }
+    .header-menu {
+      margin-left: -180px;
+      .menu-item {
+        display: inline-block;
+        margin-right: 20px;
+        .title {
+          cursor: pointer;
+          font-size: 16px;
+          color: #333;
+          &:hover {
+            color: var(--color-hl-text);
+          }
+        }
+      }
+    }
+    .header-search {
+      width: 320px;
+      height: 40px;
+      .search-box {
+        display: flex;
+        border: 1px solid var(--color-bd);
+        align-items: center;
+        .keyword {
+          border: none;
+          border-right: 1px solid var(--color-bd);
+          padding-left: 10px;
+          width: 270px;
+          height: 40px;
+        }
+        .search {
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          margin-left: 15px;
+          background: url("~assets/img/icons/icon-search.png") no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
