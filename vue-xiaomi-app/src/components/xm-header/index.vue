@@ -6,17 +6,21 @@
         <a href="/"></a>
       </div>
       <div class="header-menu">
-        <div class="menu-item">
-          <h2 class="title">小米手机</h2>
-          <div class="items"></div>
-        </div>
-        <div class="menu-item">
-          <h2 class="title">红米手机</h2>
-          <div class="items"></div>
-        </div>
-        <div class="menu-item">
-          <h2 class="title">小米电视</h2>
-          <div class="items"></div>
+        <div class="menu-item" v-for="item in productNavItems" :key="item.type">
+          <h2 class="title">{{item.title}}</h2>
+          <div class="items" v-if="item.children && item.children.length">
+            <ul>
+              <li class="product" v-for="(child, index) in item.children" :key="index">
+                <a :href="getProductLink(child.id)" :target="child.id?'_blank':'_self'">
+                  <div class="item-img">
+                    <img :src="child.url" alt="">
+                  </div>
+                  <div class="item-name">{{child.name}}</div>
+                  <div class="item-price">{{child.price | currency}}</div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="header-search">
@@ -30,10 +34,36 @@
 </template>
 
 <script>
+  import { getProductList } from 'services/product.service'
+  import { PRODUCT_NAV_ITEMS } from 'config/app.conf'
   import XmTopbar from '../xm-topbar'
 
   export default {
     name: 'xm-header',
+    data: () => ({
+      productNavItems: PRODUCT_NAV_ITEMS
+    }),
+    created() {
+      this.getProductList()
+    },
+    methods: {
+      getProductList() {
+        getProductList('100012').then(res => {
+          const xiaomi = PRODUCT_NAV_ITEMS.find(item => item.type === 'xiaomi')
+          if (xiaomi) {
+            xiaomi.children = res.list.map(item => ({
+              id: item.id,
+              url: item.mainImage,
+              name: item.name,
+              price: item.price
+            }))
+          }
+        })
+      },
+      getProductLink(id) {
+        return id ? `/product/${id}` : '/'
+      }
+    },
     components: {
       XmTopbar
     }

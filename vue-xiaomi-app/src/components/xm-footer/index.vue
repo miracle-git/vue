@@ -1,6 +1,5 @@
 <template>
   <div class="xm-footer">
-    Xiaomi Footer
   </div>
 </template>
 

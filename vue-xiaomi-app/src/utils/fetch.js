@@ -5,7 +5,7 @@ import env from 'config/env.conf'
 const _fetch_core = {
   _check: (res) => {
     let result = {}
-    if (res.success || res.status.code === 1001) {
+    if (res.success || res.status === 0) {
       result = { success: true, data: res.data || res.result }
     } else {
       result = { success: false, data: null, msg: res.message }
@@ -95,3 +95,10 @@ const _fetch_core = {
 export const get = (url, options = {}) => _fetch_core._fetch(url, options)
 export const post = (url, options = {}) => _fetch_core._fetch(url, { ...options, method: 'post' })
 export const all = (...options) => _fetch_core._fetchAll(options)
+export const proxyGet = (url, options = {}) => _fetch_core._fetch(url, { ...options, proxy: true })
+export const proxyPost = (url, options = {}) => _fetch_core._fetch(url, { ...options, proxy: true, method: 'post' })
+export const proxyAll = (...options) => _fetch_core._fetchAll(options.map(item => ({ ...item, config: { ...item.config, proxy: true } })))
+export const http = {
+  get, post, all,
+  proxy: { get: proxyGet, post: proxyPost, all: proxyAll }
+}
