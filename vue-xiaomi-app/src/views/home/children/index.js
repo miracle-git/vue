@@ -1,1 +1,1 @@
-export const NavBar = require('./nav-bar').default
+export const SwiperBox = require('./swiper-box').default

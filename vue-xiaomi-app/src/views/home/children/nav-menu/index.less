@@ -1,0 +1,28 @@
+.nav-menu {
+  position: absolute;
+  width: 255px;
+  height: 460px;
+  padding: 20px 0;
+  background-color: rgba(100, 100, 100, .4);
+  z-index: 5;
+  .menu-item {
+    position: relative;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 30px;
+    a {
+      font-size: 14px;
+      color: var(--color-white);
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-hl-text);
+    }
+    &:after {
+      position: absolute;
+      top: 12px;
+      right: 30px;
+      .icon-bg(10px, 15px, "~assets/img/icons/icon-arrow.png");
+    }
+  }
+}

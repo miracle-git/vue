@@ -1,25 +1,20 @@
 <template>
   <div class="home-page">
+   <div class="container">
+     <swiper-box/>
+     <xm-bottom-bar/>
+   </div>
   </div>
 </template>
 
 <script>
+  import { XmBottomBar } from 'components'
+  import { SwiperBox } from './children'
+
   export default {
-    data: () => ({
-    }),
-    computed: {
-    },
-    created() {
-      // 异步请求数据
-    },
-    activated() {
-      // 当开启keep-alive时，页面再次进入时调用
-    },
-    deactivated() {
-      // 当开启keep-alive时，页面离开时调用
-    },
-    methods: {
-      // 页面操作
+    components: {
+      SwiperBox,
+      XmBottomBar
     }
   }
 </script>

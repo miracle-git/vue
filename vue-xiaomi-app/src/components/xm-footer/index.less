@@ -1,0 +1,42 @@
+.xm-footer {
+  height: 220px;
+  border-top: 4px solid var(--color-hl-text);
+  background-color: var(--color-black);
+  text-align: center;
+  color: var(--color-gray);
+  font-size: 14px;
+  .logo {
+    margin: 50px 0 30px;
+    img {
+      width: 50px;
+      height: 36px;
+    }
+    .text {
+      margin-top: 8px;
+    }
+  }
+  .links {
+    margin-bottom: 8px;
+    a {
+      position: relative;
+      display: inline-block;
+      margin: 0 10px;
+      color: var(--color-gray);
+      &:hover {
+        color: var(--color-white);
+      }
+      &:after {
+        .divider(2px, -10px, 12px);
+      }
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+  .copyright {
+    font-size: 12px;
+    .site {
+      color: var(--color-hl-text);
+    }
+  }
+}

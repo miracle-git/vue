@@ -53,7 +53,9 @@
           border-top: 1px solid var(--color-bd);
           border-radius: 0 0 4px 4px;
           box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+          background-color: var(--color-white);
           transition: all .5s;
+          z-index: 10;
           .product {
             position: relative;
             display: inline-block;
@@ -61,16 +63,10 @@
             height: 220px;
             text-align: center;
             font-size: 12px;
-            &:before {
-              position: absolute;
-              content: '';
-              top: 20px;
-              right: 0;
-              width: 1px;
-              height: 180px;
-              border-left: 1px dashed var(--color-divider);
+            &:after {
+              .divider(20px, 0, 180px, 1px, dashed);
             }
-            &:last-child:before {
+            &:last-child:after {
               display: none;
             }
             a {

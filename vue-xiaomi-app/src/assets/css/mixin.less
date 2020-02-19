@@ -19,3 +19,13 @@
   background: url(@url) no-repeat center;
   background-size: @size;
 }
+
+.divider(@top, @right, @h:10px, @w:1px, @border:solid) {
+  position: absolute;
+  content: '';
+  top: @top;
+  right: @right;
+  width: @w;
+  height: @h;
+  border-left: 1px @border var(--color-divider);
+}

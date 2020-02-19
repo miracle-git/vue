@@ -2,7 +2,7 @@
   <div class="xm-topbar">
     <div class="container">
       <div class="topbar-left">
-        <a href="javascript:void(0);">小米商城</a>
+        <a href="/">小米商城</a>
         <a href="javascript:void(0);">MUI</a>
         <a href="javascript:void(0);">云服务</a>
         <a href="javascript:void(0);">协议规则</a>

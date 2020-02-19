@@ -1,0 +1,33 @@
+.xm-bottom-bar {
+  padding: 30px 0;
+  color: var(--color-text);
+  font-size: 16px;
+  text-align: center;
+  .service-item {
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    &:after {
+      .divider(2px, 0, 14px);
+    }
+    &:last-child:after {
+      display: none;
+    }
+    span {
+      margin-top: -4px;
+      vertical-align: middle;
+      &.icon-reserve {
+        .icon-bg(16px, 16px, "~assets/img/icons/icon-reserve.png");
+      }
+      &.icon-7day {
+        .icon-bg(16px, 16px, "~assets/img/icons/icon-7day.png");
+      }
+      &.icon-15day {
+        .icon-bg(16px, 16px, "~assets/img/icons/icon-15day.png");
+      }
+      &.icon-post {
+        .icon-bg(16px, 16px, "~assets/img/icons/icon-post.png");
+      }
+    }
+  }
+}

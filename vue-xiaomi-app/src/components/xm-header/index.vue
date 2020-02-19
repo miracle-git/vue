@@ -25,7 +25,7 @@
       </div>
       <div class="header-search">
         <div class="search-box">
-          <input type="text" class="keyword"/>
+          <input type="text" class="keyword" placeholder="小米9 Pro、红米 Note 7"/>
           <a href="javascript:void(0);" class="search"></a>
         </div>
       </div>
