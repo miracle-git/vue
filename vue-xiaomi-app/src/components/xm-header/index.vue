@@ -8,7 +8,7 @@
       <div class="header-menu">
         <div class="menu-item" v-for="item in productNavItems" :key="item.type">
           <h2 class="title">{{item.title}}</h2>
-          <div class="items" v-if="item.children && item.children.length">
+          <div class="children" v-if="item.children && item.children.length">
             <ul>
               <li class="product" v-for="(child, index) in item.children" :key="index">
                 <a :href="getProductLink(child.id)" :target="child.id?'_blank':'_self'">
