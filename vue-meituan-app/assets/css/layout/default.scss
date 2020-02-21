@@ -1,0 +1,35 @@
+@import "~assets/css/common/index.scss";
+
+.layout-default {
+  background-color: $primary-bg-color;
+  font-family:  "-apple-system", BlinkMacSystemFont, Roboto, "Helvetica Neue", "MIcrosoft YaHei", sans-serif !important;
+  -webkit-font-smoothing: antialiased; /* chrome, safari */
+  -moz-font-smoothing: grayscale; /* firefox */
+}
+
+.el-header, .el-main, .el-footer {
+  width: $screen-width;
+  margin: 0 auto;
+  padding: 0;
+  overflow: unset;
+  @include clearfix();
+}
+
+.el-header {
+  background: $primary-bg-color;
+  color: $link-normal-color;
+  @include wh(100%, ($header-top-height + $search-bar-height)!important);
+  font-size: $font-size-xs;
+  .mt-header {
+    width: $screen-width;
+    margin: 0 auto;
+  }
+}
+
+.el-main {
+  margin-top: $header-main-top;
+}
+
+.el-footer {
+  height: 100% !important;
+}

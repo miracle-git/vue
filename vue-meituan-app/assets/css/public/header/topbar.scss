@@ -1,0 +1,160 @@
+@import "~assets/css/common/index.scss";
+
+.mt-top-bar {
+  @at-root .mt-header {
+    .mt-top-bar {
+      width: $screen-width !important;
+      z-index: 9999;
+      @include line-height($header-top-height);
+    }
+  }
+  .mt-geo {
+    color: $link-emphasis-color;
+    font-size: $font-size-xs;
+    .switch-city {
+      background-color: #f4f4f4;
+      @include border-radius(2px);
+      @include border((border: 1px solid $primary-bd-color));
+      @include margin(4px, 'h');
+      @include padding(3px, 'h');
+      @include hover-link((color:$link-emphasis-color), (color:$primary-color));
+    }
+  }
+  .mt-user {
+    .username {
+      color: $primary-color;
+      cursor: pointer;
+    }
+    .login,
+    .logout,
+    .register {
+      @include margin(5px, 'h');
+      &.login {
+        color: $primary-color;
+        @include margin(0, 'l');
+      }
+    }
+  }
+  .mt-nav {
+    float: right;
+    @include clear();
+    z-index: 999;
+    .nav {
+      float: right;
+      height: $header-top-height;
+      li.nav-item {
+        float: left;
+        position: relative;
+        height: $header-top-height;
+        box-sizing: border-box;
+        @include padding(14px, 'h');
+        @include border((border: 1px solid transparent), 'h');
+        cursor: pointer;
+        text-align: center;
+        &.nav-item-merchant {
+          .list {
+            width: 150%;
+            @include border-radius(4px, 'tl');
+          }
+        }
+        &.nav-item-site {
+          .list {
+            width: $screen-width;
+            box-sizing: border-box;
+            @include border-radius(4px, 'tl');
+            @include padding(30px 36px 36px 47px);
+            > dl {
+              box-sizing: border-box;
+              float: left;
+              @include margin(45px, 'r');
+              dt {
+                @include margin(25px, 'b');
+                font-size: $font-size-sm;
+                color: $primary-color;
+                text-align: center;
+                cursor: default;
+              }
+              dd {
+                text-align: center;
+                float: left;
+                &:hover {
+                  color: $primary-color;
+                }
+              }
+              &.hotel {
+                width: 234px;
+                dd {
+                  width: 33%;
+                }
+              }
+              &.food {
+                width: 156px;
+                dd {
+                  width: 50%;
+                }
+              }
+              &.movie {
+                width: 90px;
+                dd {
+                  width: 100%;
+                }
+              }
+              &.app {
+                flex: 1;
+                float: right;
+                text-align: center;
+                dd {
+                  width: 60px;
+                  height: 73px;
+                  line-height: 73px;
+                  text-align: center;
+                  margin: 0 8px;
+                  img {
+                    width: 60px;
+                    height: 60px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &.nav-item-dropdown:hover {
+          @include border((border: 1px solid $primary-bd-color), 'h');
+          @include box-shadow(0, 3px, 5px, rgba(0,0,0,.1));
+          background-color: #fff;
+          > .list {
+            display: block;
+            @include margin(2px, 't');
+          }
+        }
+        .list {
+          position: absolute;
+          width: 100%;
+          @include border((border: 1px solid $primary-bd-color));
+          background: #fff;
+          text-align: center;
+          z-index: 1000;
+          right: -1px;
+          top: 95%;
+          @include box-shadow(0, 3px, 5px, rgba(0,0,0,.1));
+          @include border-radius(4px, 'blr');
+          box-sizing: content-box;
+          display: none;
+          z-index: 999;
+          dd {
+            @include line-height(35px);
+          }
+          &:after {
+            content: "";
+            background: #fff;
+            width: 76px;
+            height: 3px;
+            position: absolute;
+            top: -2px;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}

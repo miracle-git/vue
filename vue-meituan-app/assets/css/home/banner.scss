@@ -1,0 +1,101 @@
+@import "~assets/css/common/index.scss";
+
+.mt-banner {
+  @at-root .mt-home {
+    .mt-banner {
+      @include margin(-10px, "t");
+      .el-row {
+        @include clearfix();
+      }
+    }
+  }
+  .mt-banner-slider {
+    .el-carousel {
+      @include wh($banner-slider-width, $banner-slider-height);
+      .el-carousel__container, img {
+        height: $banner-slider-height !important;
+      }
+      .el-carousel__arrow {
+        background: $link-emphasis-color;
+        &:hover {
+          background: $link-dark-color;
+        }
+      }
+    }
+  }
+  .mt-banner-entertainment {
+    @include margin(0 10px 10px 0);
+    @include wh($banner-item-width-sm, $banner-slider-height);
+    background-size: $banner-item-width-sm;
+    background-image:url(//p1.meituan.net/codeman/e473bb428f070321269b23370ff02ba956209.jpg);
+  }
+  .mt-banner-hotel {
+    @include wh($banner-item-width-lg, $category-detail-height - $banner-slider-height - 10);
+    background-size: $banner-item-width-lg;
+    background-image: url(//p0.meituan.net/codeman/843d7347cb20d945e4bc39b6403f0515182965.png);
+  }
+  .mt-banner-music {
+    @include wh($banner-item-width-lg, $category-detail-height - $banner-slider-height - 10);
+    background-size: $banner-item-width-lg;
+    background-image: url(//p1.meituan.net/codeman/16442c19da1f1c4544f794e29d99c92051716.jpg);
+  }
+  .mt-banner-cooperation {
+    @include wh($banner-item-width-sm, $category-detail-height - $banner-slider-height - 10);
+    background-size: $banner-item-width-sm;
+    background-image: url(//p1.meituan.net/codeman/5b21cddb4bb1cbc3a9c3bce0f726c75940469.jpg);
+  }
+  .mt-banner-account,
+  .mt-banner-mobile {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    @include padding(30px);
+    @include border();
+    &.mt-banner-account {
+      height: $banner-slider-height;
+      .avatar {
+        img {
+          @include circle(50px);
+          @include border((border: 4px solid $primary-bd-color));
+        }
+      }
+      .login-user {
+        color: $link-normal-color;
+      }
+      .el-button {
+        @include wh(120px);
+        @include margin(10px, "t");
+        &:hover {
+          color: #fff;
+          background-color: $primary-hl-color;
+          @include border();
+        }
+      }
+    }
+    &.mt-banner-mobile {
+      height: $category-detail-height - $banner-slider-height - 10;
+      @include padding(5px, "v");
+      .qrcode {
+        img {
+          @include wh(100px, 100px);
+        }
+      }
+      .download-app {
+        @include emphasis($font-size-sm);
+      }
+      .desc {
+        span {
+          font-size: $font-size-xs;
+          color: $link-emphasis-color;
+          &.highlight {
+            color: #ec5330;
+            font-weight: 500;
+            @include margin(5px, "r");
+          }
+        }
+      }
+    }
+  }
+}

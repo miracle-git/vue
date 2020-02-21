@@ -1,0 +1,103 @@
+@import "~assets/css/common/index.scss";
+
+.mt-category {
+  @at-root .mt-home {
+    .mt-category {
+      box-sizing: border-box;
+      color: #fff;
+      position: relative;
+      z-index: 999;
+      background: linear-gradient(-180deg, rgba(2, 181, 157, .85) 2%, rgba(22, 146, 183, .85) 100%);
+      @include wh($category-container-width, $category-container-height);
+      @include margin(-70px 10px 0 0);
+    }
+  }
+  .cate-items {
+    dt {
+      height: $category-all-height;
+      box-sizing: border-box;
+      font-size: $font-size-md;
+      font-weight: 400;
+      background: $primary-hl-color;
+      @include padding($category-item-padding 0 0 $category-item-padding);
+      @include margin(10px, "b");
+    }
+    dd {
+      position: relative;
+      box-sizing: border-box;
+      height: $category-all-height / 2;
+      cursor: pointer;
+      @include padding(2px $category-item-padding);
+      &:hover, &.hover {
+        background-color: rgba(255, 255, 255, .2);
+        & > i {
+          opacity: 1;
+        }
+      }
+      i {
+        font-family: "meituan" !important;
+        font-size: $font-size-xs;
+        font-style: normal;
+        opacity: .4;
+        @include margin(5px, "r");
+        &:before {
+          display: inline-block;
+          @include wh(14px, 14px);
+        }
+        &.food {
+          &:before {
+            content: "\e622";
+          }
+        }
+        &.takeout {
+          &:before {
+            content: "\e630";
+          }
+        }
+        &.hotel {
+          &:before {
+            content: "\e62a";
+          }
+        }
+      }
+      .arrow {
+        @include arrow(#fff);
+        @include absolute-position(0, 13px, 0);
+      }
+    }
+  }
+
+  .cate-details {
+    left: $category-container-width;
+    bottom: 0;
+    position: absolute;
+    height: $category-detail-height;
+    width: $category-detail-width;
+    @include padding(20px, "h");
+    background: #fff;
+    h2.title {
+      border-bottom: 1px solid $primary-bd-color;
+      @include emphasis();
+      @include margin(12px, "t");
+      @include padding(10px, "b");
+    }
+    a.more {
+      @include link();
+      @include margin(-30px, "t");
+      float: right;
+      color: $link-normal-color !important;
+      @include line-height(unset);
+      @include clearfix();
+      .arrow {
+        @include arrow();
+        @include margin(2px, "b");
+      }
+    }
+    span.item {
+      display: inline-block;
+      @include link();
+      @include line-height(22px);
+      @include margin(7px 15px 0 0);
+    }
+  }
+}

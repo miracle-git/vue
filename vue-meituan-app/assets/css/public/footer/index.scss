@@ -1,0 +1,86 @@
+@import "~assets/css/common/index.scss";
+
+.mt-footer {
+  @at-root .layout-default {
+    .mt-footer {
+      width: 100%;
+      > div {
+        @include clearfix();
+      }
+    }
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    @include padding(20px, "t");
+    @include border((border: 1px solid $primary-bd-color), "v");
+    .link-item {
+      width: 20%;
+      float: left;
+      dl {
+        color: $link-emphasis-color;
+        @include padding(15px, "b");
+        a {
+          @include link();
+          @include line-height(unset);
+          &.merchant-entry {
+            font-size: $font-size-sm;
+          }
+        }
+        dt {
+          font-size: $font-size-sm;
+          font-weight: 500;
+        }
+        dd {
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  .copyright {
+    color: $link-normal-color;
+    @include padding(15px, "v");
+    @include line-height(1.6);
+    a {
+      @include link();
+      @include line-height(unset);
+    }
+    .left {
+      float: left;
+      p.rules {
+        a {
+          @include margin(5px, "l");
+        }
+      }
+    }
+    .right {
+      float: right;
+      text-align: right;
+      .cert {
+        text-align: left;
+        @include padding(6px, "t");
+        .sp-ft {
+          display: inline-block;
+          overflow: hidden;
+          text-indent: -1000px;
+          height: 38px;
+          background-image: url(~assets/img/footer.png);
+          background-repeat: no-repeat;
+          margin-right: 2px;
+          &.sp-ft--record {
+            width: 109px;
+            background-position: 0 -167px;
+          }
+          &.sp-ft--knet {
+            width: 107px;
+            background-position: 0 -127px;
+          }
+          &.sp-ft--12315 {
+            width: 107px;
+            background-position: 0 -40px;
+          }
+        }
+      }
+    }
+  }
+}

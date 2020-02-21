@@ -1,0 +1,193 @@
+@import "~assets/css/common/index.scss";
+
+.mt-search-bar {
+  @at-root .mt-header {
+    .mt-search-bar {
+      width: $screen-width !important;
+      z-index: 998;
+      background-color: #fff;
+      height: $search-bar-height !important;
+      @include padding(20px 20px);
+      box-sizing: border-box;
+      align-items: start;
+    }
+  }
+  .left {
+    width: $search-logo-width;
+    @include margin($search-wrapper-margin, 'l');
+    @include padding($search-wrapper-padding, 't');
+    .logo {
+      img {
+        width: 126px;
+        height: 46px;
+      }
+    }
+  }
+  .center {
+    flex: 1;
+    width: auto;
+    @include margin($search-wrapper-margin - 10, 'l');
+    .mt-search {
+      .search-wrapper {
+        @include margin(16px, 't');
+        @include border((border: 1px solid $primary-hl-color));
+        @include border-radius(4px);
+        width: $search-wrapper-width;
+        box-sizing: border-box;
+        position: relative;
+        white-space: nowrap;
+        .el-input {
+          width: $search-input-width;
+          input {
+            border: none;
+            @include padding(0 $search-input-padding);
+            @include border-radius(0, 'rtb');
+          }
+        }
+        .el-button {
+          width: $search-button-width;
+          background-color: $primary-hl-color;
+          font-size: $font-size-md;
+          @include border((border: 1px solid transparent));
+          @include border-radius(0, 'ltb');
+          vertical-align: -2px;
+          i {
+            font-weight: bold;
+          }
+        }
+        .hot-list,
+        .search-list {
+          top: 43px;
+          left: 0;
+          position: absolute;
+          background: #fff;
+          font-size: $font-size-xs;
+          box-sizing: border-box;
+          width: $search-input-width + 5;
+          border-top: none;
+          z-index: 999;
+          @include border();
+          @include margin(-1px, 'l');
+          @include padding(0 $search-input-padding);
+          @include box-shadow(0, 3px, 5px, rgba(0,0,0,.1));
+          @include border-radius(4px, 'blr');
+          dt {
+            color: $link-normal-color;
+            font-weight: bold;
+            @include margin(-15px, 'b');
+          }
+          dd {
+            display: inline-block;
+            color: $link-emphasis-color;
+            @include margin(0 10px 3px 0);
+            cursor: pointer;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+          &.hot-list {
+            dl {
+              overflow: hidden;
+            }
+          }
+          &.search-list {
+            @include clear();
+            dd {
+              @include margin(0);
+              @include padding(5px $search-input-padding);
+              display: block;
+              line-height: 1.6;
+              &:hover {
+                background-color: $primary-bg-color;
+              }
+            }
+          }
+        }
+      }
+      .recommend-list {
+        width: $search-wrapper-width - 12;
+        overflow: hidden;
+        @include padding($search-input-padding, 'l');
+        @include margin(8px, 't');
+        @include line-height(15px, 1);
+        a {
+          @include line-height(40px, 1);
+          @include margin(0 10px 3px 0);
+        }
+      }
+      .nav-item-list {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          @include margin(15px, 't');
+          li {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            a {
+              @include emphasis();
+              &:hover {
+                color: #f04d4e;
+              }
+              &.takeout:hover {
+                color: #fbc700;
+              }
+              &.apartment:hover {
+                color: #FDC411;
+              }
+              &.merchant:hover {
+                color: #31BBAC;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .right {
+    width: auto;
+    float: right;
+    @include padding($search-wrapper-padding, 't');
+    @include margin($search-wrapper-margin, 'r');
+    .sale-service {
+      li {
+        display: inline-block;
+        text-align: center;
+        @include padding(5px, 'h');
+        i {
+          font-style: normal;
+          display: block;
+          @include line-height(36px);
+          @include margin(-10px, 'b');
+          &:after {
+            font-family: iconfont;
+            font-size: 36px;
+            color: $primary-hl-color;
+          }
+          &.refund {
+            &:after {
+              content: '\e65f';
+            }
+          }
+          &.free {
+            &:after {
+              content: '\e652';
+            }
+          }
+          &.overdue {
+            &:after {
+              content: '\e65e';
+            }
+          }
+        }
+        .text {
+          color: $link-normal-color;
+          font-size: 12px;
+          line-height: 1;
+          margin: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

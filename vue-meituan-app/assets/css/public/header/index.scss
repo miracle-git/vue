@@ -1,0 +1,34 @@
+@import "~assets/css/common/index.scss";
+@import "./topbar.scss";
+@import "./searchbar.scss";
+
+.mt-header {
+  @at-root .layout-default {
+    .el-header {
+      .mt-header {
+        width: 100%;
+        a, .link {
+          font-size: $font-size-xs;
+          cursor: pointer !important;
+          @include line-height($header-top-height);
+          @include hover-link((color:$link-normal-color), (color:$primary-color));
+          &.link {
+            cursor: default !important;
+          }
+        }
+      }
+    }
+  }
+  .el-row:nth-child(1) {
+    width: $screen-width;
+    z-index: 9999;
+    @include margin(auto, 'h');
+    @include line-height($header-top-height);
+    @include clearfix();
+  }
+  .el-row:nth-child(2) {
+    background-color: #fff; 
+    z-index: 998;
+    @include clearfix();
+  }
+}
