@@ -2,6 +2,7 @@
   <div class="home-page">
    <div class="container">
      <swiper-box/>
+     <adv-box/>
      <xm-bottom-bar/>
    </div>
   </div>
@@ -9,12 +10,13 @@
 
 <script>
   import { XmBottomBar } from 'components'
-  import { SwiperBox } from './children'
+  import { SwiperBox, AdvBox } from './children'
 
   export default {
     components: {
+      XmBottomBar,
       SwiperBox,
-      XmBottomBar
+      AdvBox
     }
   }
 </script>
