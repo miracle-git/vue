@@ -48,7 +48,7 @@
     },
     methods: {
       getProductList() {
-        getProductList('100012').then(res => {
+        getProductList('100012', 6).then(res => {
           const xiaomi = PRODUCT_NAV_ITEMS.find(item => item.type === 'xiaomi')
           if (xiaomi) {
             xiaomi.children = res.list.map(item => ({

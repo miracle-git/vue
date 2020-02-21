@@ -1,26 +1,22 @@
 <template>
   <div class="home-page">
-   <div class="container">
-     <swiper-box/>
-     <adv-box/>
-     <xm-bottom-bar/>
-   </div>
+    <swiper-box/>
+    <adv-box/>
+    <product-box/>
+    <xm-bottom-bar/>
   </div>
 </template>
 
 <script>
   import { XmBottomBar } from 'components'
-  import { SwiperBox, AdvBox } from './children'
+  import { SwiperBox, AdvBox, ProductBox } from './children'
 
   export default {
     components: {
       XmBottomBar,
       SwiperBox,
-      AdvBox
+      AdvBox,
+      ProductBox
     }
   }
 </script>
-
-<style scoped lang="less">
-  @import "./index.less";
-</style>

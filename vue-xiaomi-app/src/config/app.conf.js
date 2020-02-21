@@ -375,14 +375,14 @@ export const NAV_MENU_LIST_ITEMS = {
   ]
 }
 
-export const ADV_LIST_ITEMS = {
-  advs: [
-    { id: 32, url: require('assets/img/advs/adv-1.png'), desc: '小米9 超值买赠' },
-    { id: 45, url: require('assets/img/advs/adv-2.jpg'), desc: 'Redmi K20 Pro 尊享版' },
-    { id: 47, url: require('assets/img/advs/adv-3.png'), desc: 'Redmi Note 7' },
-    { id: 48, url: require('assets/img/advs/adv-4.jpg'), desc: '小米MIX3' }
-  ],
-  banner: {
-    id: 48, url: require('assets/img/advs/banner.png'), desc: '小米CC全新系列发布会'
-  }
-}
+export const ADV_LIST_ITEMS = [
+  { id: 32, url: require('assets/img/advs/adv-1.png'), desc: '小米9 超值买赠' },
+  { id: 45, url: require('assets/img/advs/adv-2.jpg'), desc: 'Redmi K20 Pro 尊享版' },
+  { id: 47, url: require('assets/img/advs/adv-3.png'), desc: 'Redmi Note 7' },
+  { id: 48, url: require('assets/img/advs/adv-4.jpg'), desc: '小米MIX3' }
+]
+
+export const BANNER_LIST_ITEMS = [
+  { id: 33, url: require('assets/img/banners/banner-1.png'), desc: '小米CC全新系列发布会' },
+  { id: 48, url: require('assets/img/banners/banner-2.jpg'), desc: '小米MIX Alpha' }
+]

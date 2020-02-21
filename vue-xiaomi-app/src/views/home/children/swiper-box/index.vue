@@ -1,16 +1,18 @@
 <template>
   <div class="swiper-box">
-    <nav-menu/>
-    <swiper :options="swiperOptions">
-      <swiper-slide v-for="(item, index) in slideList" :key="index">
-        <a :href="`/product/${item.id}`">
-          <img :src="item.url" :alt="item.desc">
-        </a>
-      </swiper-slide>
-      <div class="swiper-pagination" slot="pagination"></div>
-      <div class="swiper-button-prev" slot="button-prev"></div>
-      <div class="swiper-button-next" slot="button-next"></div>
-    </swiper>
+    <div class="container">
+      <nav-menu/>
+      <swiper :options="swiperOptions">
+        <swiper-slide v-for="(item, index) in slideList" :key="index">
+          <a :href="`/product/${item.id}`">
+            <img :src="item.url" :alt="item.desc">
+          </a>
+        </swiper-slide>
+        <div class="swiper-pagination" slot="pagination"></div>
+        <div class="swiper-button-prev" slot="button-prev"></div>
+        <div class="swiper-button-next" slot="button-next"></div>
+      </swiper>
+    </div>
   </div>
 </template>
 
