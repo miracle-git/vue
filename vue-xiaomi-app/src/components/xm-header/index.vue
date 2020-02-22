@@ -13,7 +13,7 @@
               <li class="product" v-for="(child, index) in item.children" :key="index">
                 <a :href="getProductLink(child.id)" :target="child.id?'_blank':'_self'">
                   <div class="item-img">
-                    <img :src="child.url" alt="">
+                    <img v-lazy="child.url" alt="">
                   </div>
                   <div class="item-name">{{child.name}}</div>
                   <div class="item-price">{{child.price | currency}}</div>

@@ -9,21 +9,9 @@ export default render(App, {
   store,
   lazy: {
     preLoad: 1,
-    loading: require('assets/img/common/loading.gif')
+    loading: require('assets/img/loading/loading-bubbles.svg')
   },
   init: Vue => {
     Vue.use(VueUI)
   }
 })
-
-// render({ component: App, root: '#root' }, {
-//   router,
-//   store,
-//   lazy: {
-//     preLoad: 1,
-//     loading: require('assets/img/common/loading.gif')
-//   },
-//   boot: Vue => {
-//     Vue.use(VueUI)
-//   }
-// })

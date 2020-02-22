@@ -11,6 +11,24 @@
   align-items: @v;
 }
 
+.fixed-center(@pos:fixed, @top:50%, @w:100%, @h:auto) {
+  position: @pos;
+  top: @top;
+  left: 50%;
+  width: @w;
+  height: @h;
+  transform: translate(-50%, -50%);
+}
+
+.fixed-all(@pos:fixed) {
+  position: @pos;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .icon-bg(@w, @h, @url, @size:contain) {
   display: inline-block;
   content: '';

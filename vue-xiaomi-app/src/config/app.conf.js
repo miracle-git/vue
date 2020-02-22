@@ -1,3 +1,7 @@
+export const EVENT_BUS_KEYS = {
+  addToCart: 'xm:evt-add-to-cart'
+}
+
 export const PRODUCT_NAV_ITEMS = [
   {
     type: 'xiaomi',

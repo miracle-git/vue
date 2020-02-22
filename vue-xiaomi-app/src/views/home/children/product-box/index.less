@@ -26,29 +26,29 @@
         margin: 0 0 10px 10px;
         background-color: var(--color-white);
         text-align: center;
-        &:last-child {
-          margin-right: 0;
-        }
         .item-tag {
           position: absolute;
-          display: inline-block;
           top: -5px;
-          width: 60px;
-          height: 24px;
-          line-height: 24px;
-          margin-left: -12%;
-          color: var(--color-white);
-          &.new {
-            background-color: var(--color-green);
-          }
-          &.hot {
-            background-color: var(--color-red);
+          width: 100%;
+          margin-left: -20px;
+          .item-tag-inner {
+            display: inline-block;
+            width: 60px;
+            height: 24px;
+            line-height: 24px;
+            color: var(--color-white);
+            &.new {
+              background-color: var(--color-green);
+            }
+            &.hot {
+              background-color: var(--color-red);
+            }
           }
         }
         .item-image {
           margin-bottom: 20px;
           img {
-            width: 180px;
+            width: 160px;
             height: 160px;
           }
         }

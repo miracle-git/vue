@@ -4,12 +4,12 @@
       <div class="adv-list">
         <a class="adv-list-item brick-item" :href="`/product/${item.id}`" target="_blank"
            v-for="(item, index) in advs" :key="index">
-          <img :src="item.url" :alt="item.desc">
+          <img v-lazy="item.url" :alt="item.desc">
         </a>
       </div>
       <div class="adv-banner">
         <a :href="`/product/${banner.id}`" target="_blank">
-          <img :src="banner.url" :alt="banner.desc">
+          <img v-lazy="banner.url" :alt="banner.desc">
         </a>
       </div>
     </div>

@@ -9,7 +9,7 @@
           <ul v-for="(mItem, mIndex) in menuListItems[item.id]" :key="mIndex">
             <li v-for="(cItem, cIndex) in mItem" :key="cIndex">
               <a :href="`/product/${cItem.id}`" target="_blank">
-                <img :src="cItem.url" alt="">
+                <img v-lazy="cItem.url" alt="">
                 {{cItem.text}}
               </a>
             </li>
