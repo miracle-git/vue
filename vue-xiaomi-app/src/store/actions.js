@@ -1,15 +1,10 @@
-import { SHOP_CART_TYPES } from './types'
+import { SAVE_USER_INFO, SAVE_CART_NUM } from './types'
 
 export default {
-  addToCart(context, payload) {
-    context.commit(SHOP_CART_TYPES.ADD_TO_CART, payload)
+  saveUserInfo(context, payload) {
+    context.commit(SAVE_USER_INFO, payload)
   },
-  addToCartAsync(context, payload) {
-    return new Promise(resolve => {
-      setTimeout(() => {
-        context.commit(SHOP_CART_TYPES.ADD_TO_CART, payload)
-        resolve('成功加入购物车')
-      }, 500)
-    })
+  saveCartNum(context, payload) {
+    context.commit(SAVE_CART_NUM, payload)
   }
 }

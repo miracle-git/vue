@@ -1,3 +1,2 @@
-export const SHOP_CART_TYPES = {
-  ADD_TO_CART: 'ADD_TO_CART'
-}
+export const SAVE_USER_INFO = 'SAVE_USER_INFO'
+export const SAVE_CART_NUM = 'SAVE_CART_NUM'

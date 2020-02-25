@@ -1,3 +1,4 @@
 export default {
-  cartList: []
+  userName: '',
+  cartNum: 0
 }

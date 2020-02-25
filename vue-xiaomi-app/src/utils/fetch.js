@@ -13,8 +13,10 @@ const _fetch_core = {
   },
   _check: (res) => {
     if (res.status === 10) {
-      context.$router.push('/login')
-      return
+      if (!['/', '/home'].includes(context.$route.path)) {
+        context.$router.push('/login')
+        return
+      }
     }
     let result = {}
     if (res.success || res.status === 0) {

@@ -51,6 +51,7 @@
         // 验证通过后开始登录
         login(username, password).then(res => {
           this.$cookie.set(XM_APP_KEYS.loginUserId, res.id, { expires: 1 }) // 默认1天过期
+          this.$bus.$emit(XM_APP_KEYS.getAppData)
           this.$router.push('/')
         }).catch(err => {
           alert(err.message)
