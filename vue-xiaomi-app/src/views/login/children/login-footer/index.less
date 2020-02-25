@@ -1,0 +1,32 @@
+.login-footer {
+  height: 100px;
+  padding-top: 30px;
+  background-color: var(--color-white);
+  text-align: center;
+  color: var(--color-gray);
+  font-size: 14px;
+  .links {
+    margin-bottom: 8px;
+    a {
+      position: relative;
+      display: inline-block;
+      margin: 0 10px;
+      color: var(--color-gray);
+      &:hover {
+        color: var(--color-hl-text);
+      }
+      &:after {
+        .divider(2px, -10px, 12px);
+      }
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+  .copyright {
+    font-size: 12px;
+    .site {
+      color: var(--color-hl-text);
+    }
+  }
+}

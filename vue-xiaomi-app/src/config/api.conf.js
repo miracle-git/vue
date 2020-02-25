@@ -5,6 +5,12 @@ export default getDataApi({
     list: '/products'
   },
   cart: {
-    add: '/carts'
+    add: '/carts',
+    num: '/carts/products/sum'
+  },
+  user: {
+    info: '/user',
+    login: '/user/login',
+    register: '/user/register'
   }
 }, '/api')

@@ -7,12 +7,12 @@
 </template>
 
 <script>
-  import { EVENT_BUS_KEYS } from 'config/app.conf'
+  import { XM_APP_KEYS } from 'config/app.conf'
 
   export default {
     name: 'cart-modal',
     created() {
-      this.$bus.$on(EVENT_BUS_KEYS.addToCart, () => this.$refs.modal.show())
+      this.$bus.$on(XM_APP_KEYS.addToCart, () => this.$refs.modal.show())
     }
   }
 </script>

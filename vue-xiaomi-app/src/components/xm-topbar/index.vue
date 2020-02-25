@@ -8,8 +8,7 @@
         <a href="javascript:void(0);">协议规则</a>
       </div>
       <div class="topbar-right">
-        <a href="javascript:void(0);">登录</a>
-        <a href="javascript:void(0);">注册</a>
+        <a href="/login">登录</a>
         <a href="javascript:void(0);" class="cart"><span class="icon-cart"></span>购物车</a>
       </div>
     </div>

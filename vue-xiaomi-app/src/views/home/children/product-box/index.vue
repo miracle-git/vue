@@ -33,7 +33,7 @@
 <script>
   import { getProductList } from 'services/product.service'
   // import { addToCart } from 'services/cart.service'
-  import { BANNER_LIST_ITEMS, EVENT_BUS_KEYS } from 'config/app.conf'
+  import { BANNER_LIST_ITEMS, XM_APP_KEYS } from 'config/app.conf'
   export default {
     name: 'product-box',
     data: () => ({
@@ -67,7 +67,7 @@
         }
       },
       addToCart() {
-        this.$bus.$emit(EVENT_BUS_KEYS.addToCart)
+        this.$bus.$emit(XM_APP_KEYS.addToCart)
         // addToCart(id).then(res => {
         //   console.log(res)
         // })

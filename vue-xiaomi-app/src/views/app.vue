@@ -5,8 +5,16 @@
 </template>
 
 <script>
+  import { getAppData } from 'services/data.service'
+
   export default {
-    name: 'app'
+    name: 'app',
+    created() {
+      getAppData().then(([user, cart]) => {
+        console.log(user)
+        console.log(cart)
+      })
+    }
   }
 </script>
 

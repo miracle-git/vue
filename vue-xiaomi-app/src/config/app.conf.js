@@ -1,4 +1,5 @@
-export const EVENT_BUS_KEYS = {
+export const XM_APP_KEYS = {
+  loginUserId: 'xm:login-user-id',
   addToCart: 'xm:evt-add-to-cart'
 }
 

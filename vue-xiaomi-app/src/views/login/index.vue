@@ -1,14 +1,19 @@
 <template>
   <div class="login-page">
-    Login Page
+    <login-header/>
+    <login-form/>
+    <login-footer/>
   </div>
 </template>
 
 <script>
+  import { LoginHeader, LoginForm, LoginFooter } from './children'
+
   export default {
+    components: {
+      LoginHeader,
+      LoginForm,
+      LoginFooter
+    }
   }
 </script>
-
-<style scoped lang="less">
-  @import "./index.less";
-</style>

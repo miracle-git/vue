@@ -3,12 +3,24 @@ import context from '@/main'
 import env from 'config/env.conf'
 
 const _fetch_core = {
+  _parse: (res, prop) => {
+    if (prop in res) {
+      if (DataType.isTrueOrZero(res[prop])) {
+        return { data: res[prop] }
+      }
+    }
+    return false
+  },
   _check: (res) => {
+    if (res.status === 10) {
+      context.$router.push('/login')
+      return
+    }
     let result = {}
     if (res.success || res.status === 0) {
-      result = { success: true, data: res.data || res.result }
+      result = { success: true, ...(_fetch_core._parse(res, 'data') || _fetch_core._parse(res, 'result')) }
     } else {
-      result = { success: false, data: null, msg: res.message }
+      result = { success: false, data: null, msg: res.msg }
     }
     return result
   },
@@ -20,12 +32,6 @@ const _fetch_core = {
       loading && context && context.$loading.hide()
     }
   },
-  // _spinner: (loading, show = true) => {
-  //   const $indicator = document.getElementById('indicator')
-  //   if (loading && $indicator) {
-  //     $indicator.style.display = show ? 'block' : 'none'
-  //   }
-  // },
   _handle: (res, options = {}) => {
     if (options.key) {
       if (DataType.isArray(res.data)) {
@@ -46,7 +52,6 @@ const _fetch_core = {
         ...options
       }).then(res => {
         _fetch_core._spinner.hide(options.loading)
-        // _fetch_core._spinner(options.loading, false)
         res = _fetch_core._check(res)
         if (res.success) {
           resolve(_fetch_core._handle(res, options))
@@ -58,7 +63,6 @@ const _fetch_core = {
         }
       }).catch(err => {
         _fetch_core._spinner.hide(options.loading)
-        // _fetch_core._spinner(options.loading, false)
         reject({
           title: `接口:[${url}]调用失败`,
           message: err.msg || err
@@ -71,11 +75,9 @@ const _fetch_core = {
     const loading = options.some(opt => opt && opt.config && opt.config.loading)
     return new Promise((resolve, reject) => {
       _fetch_core._spinner.show(loading)
-      // _fetch_core._spinner(loading, true)
       options.forEach(opt => opt.config = { ...opt.config, env })
       return DataFetch.all(options).then(res => {
         _fetch_core._spinner.hide(loading)
-        // _fetch_core._spinner(loading, false)
         resolve(res.map((data, index) => {
           data = _fetch_core._check(data)
           return _fetch_core._handle(data, options[index].config)
