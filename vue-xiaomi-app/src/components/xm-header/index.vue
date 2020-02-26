@@ -11,7 +11,7 @@
           <div class="children" v-if="item.children && item.children.length">
             <ul>
               <li class="product" v-for="(child, index) in item.children" :key="index">
-                <a :href="getProductLink(child.id)" :target="child.id?'_blank':'_self'">
+                <a :href="getProductLink(child.id)">
                   <div class="item-img">
                     <img v-lazy="child.url" alt="">
                   </div>

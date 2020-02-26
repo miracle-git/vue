@@ -1,1 +1,1 @@
-export const BackTopMixin = require('./back-top').default
+export const FixTopMixin = require('./fix-top').default

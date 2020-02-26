@@ -1,0 +1,67 @@
+.home-nav-menu {
+  position: absolute;
+  width: 255px;
+  height: 460px;
+  padding: 20px 0;
+  background-color: rgba(100, 100, 100, .4);
+  z-index: 5;
+  .menu-item {
+    height: 42px;
+    line-height: 42px;
+    padding-left: 30px;
+    a {
+      position: relative;
+      display: inline-block;
+      width: 85%;
+      font-size: 14px;
+      color: var(--color-white);
+      &:after {
+        position: absolute;
+        top: 10px;
+        right: -10px;
+        .icon-bg(10px, 20px, "~assets/img/icons/icon-arrow.png");
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-hl-text);
+      .children {
+        display: block;
+      }
+    }
+    .children {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 255px;
+      width: 972px;
+      height: 460px;
+      border: 1px solid var(--color-bd);
+      border-left: none;
+      background-color: var(--color-white);
+      > ul {
+        display: flex;
+        height: 75px;
+        li {
+          width: 25%;
+          line-height: 75px;
+          padding-left: 25px;
+          a {
+            display: inline-block;
+            cursor: pointer;
+            font-size: 13px;
+            color: var(--color-black);
+            &:hover {
+              color: var(--color-hl-text);
+            }
+          }
+          img {
+            width: 42px;
+            height: 36px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

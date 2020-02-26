@@ -51,6 +51,14 @@ export const SWIPER_SLIDE_ITEMS = [
   { id: 46, url: require('assets/img/sliders/slide-5.jpg'), desc: '米家只能门锁 青春版' }
 ]
 
+export const PRODUCT_SLIDE_ITEMS = [
+  { id: 42, url: require('assets/img/products/gallery-1.jpg') },
+  { id: 43, url: require('assets/img/products/gallery-2.png') },
+  { id: 44, url: require('assets/img/products/gallery-3.png') },
+  { id: 45, url: require('assets/img/products/gallery-4.png') },
+  { id: 46, url: require('assets/img/products/gallery-5.jpg') }
+]
+
 export const NAV_MENU_ITEMS = [
   { id: 101, text: '手机 电话卡', url: 'https://www.mi.com/p/1915.html' },
   { id: 102, text: '电视 盒子', url: 'https://www.mi.com/a/h/9819.html' },

@@ -1,24 +1,24 @@
 <template>
   <div class="home-page">
-    <swiper-box/>
-    <adv-box/>
-    <product-box/>
+    <home-swiper/>
+    <home-adv-list/>
+    <home-product-list/>
     <xm-bottom-bar/>
-    <cart-modal/>
+    <home-cart-modal/>
   </div>
 </template>
 
 <script>
   import { XmBottomBar } from 'components'
-  import { SwiperBox, AdvBox, ProductBox, CartModal } from './children'
+  import { HomeSwiper, HomeAdvList, HomeProductList, HomeCartModal } from './children'
 
   export default {
     components: {
       XmBottomBar,
-      SwiperBox,
-      AdvBox,
-      ProductBox,
-      CartModal
+      HomeSwiper,
+      HomeAdvList,
+      HomeProductList,
+      HomeCartModal
     }
   }
 </script>

@@ -2,7 +2,8 @@ import { getDataApi } from 'm2-core'
 
 export default getDataApi({
   product: {
-    list: '/products'
+    list: '/products',
+    info: '/products/{id}'
   },
   cart: {
     add: '/carts',

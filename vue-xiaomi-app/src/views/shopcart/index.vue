@@ -111,11 +111,9 @@
 
 <script>
   import { mapGetters } from 'vuex'
-  import { BackTopMixin } from 'mixins'
   import { NavBar } from './children'
 
   export default {
-    mixins: [BackTopMixin],
     computed: {
       ...mapGetters(['cartLength'])
     },

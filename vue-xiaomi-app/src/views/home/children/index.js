@@ -1,4 +1,4 @@
-export const SwiperBox = require('./swiper-box').default
-export const AdvBox = require('./adv-box').default
-export const ProductBox = require('./product-box').default
-export const CartModal = require('./cart-modal').default
+export const HomeSwiper = require('./home-swiper').default
+export const HomeAdvList = require('./home-adv-list').default
+export const HomeProductList = require('./home-product-list').default
+export const HomeCartModal = require('./home-cart-modal').default
