@@ -14,4 +14,4 @@ export default getDataApi({
     sub: '/subcategory',
     detail: '/subcategory/detail'
   }
-}, '/api/hy')
+}, '/api/wh')
