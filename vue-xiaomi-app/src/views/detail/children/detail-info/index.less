@@ -1,0 +1,125 @@
+.detail-info {
+  .container {
+    .detail-swiper {
+      width: 480px;
+      height: 620px;
+      margin-top: 10px;
+    }
+    .detail-content {
+      width: 640px;
+      height: 800px;
+      padding: 15px;
+      > div {
+        margin-bottom: 20px;
+      }
+      .title {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: var(--color-black);
+      }
+      .item-info {
+        padding: 10px 0;
+        border-bottom: 1px dashed var(--color-bd);
+        .item-title {
+          margin-bottom: 20px;
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .item-desc {
+          height: 36px;
+          line-height: 1.5;
+          font-size: 14px;
+          color: var(--color-text);
+        }
+        .item-vendor {
+          margin: 30px 0 15px;
+          font-size: 16px;
+          color: var(--color-hl-text);
+        }
+        .item-price {
+          font-size: 24px;
+          color: var(--color-hl-text);
+          .old-price {
+            margin-left: 15px;
+            text-decoration: line-through;
+            font-size: 16px;
+            color: var(--color-gray);
+          }
+        }
+      }
+      .item-area {
+        position: relative;
+        height: 100px;
+        padding: 25px 20px;
+        background-color: var(--color-bg-gray);
+        border: 1px solid var(--color-bd);
+        font-size: 14px;
+      }
+      .item-delivery {
+        .loc {
+          position: absolute;
+          .icon-bg(16px, 16px, "~assets/img/icons/icon-loc.png");
+        }
+        .addr {
+          margin-left: 25px;
+          color: var(--color-black);
+        }
+        .stock {
+          margin: 10px 0 0 25px;
+          color: var(--color-hl-text);
+        }
+      }
+      .item-select {
+        > div {
+          width: 48%;
+          height: 50px;
+          line-height: 50px;
+          font-size: 14px;
+          text-align: center;
+          border: 1px solid var(--color-bd);
+          cursor: pointer;
+          &.checked {
+            border: 1px solid var(--color-hl-text);
+            color: var(--color-hl-text);
+          }
+        }
+        &.item-color {
+          > div {
+            .flex-center();
+            span {
+              display: inline-block;
+              width: 14px;
+              height: 14px;
+              margin-right: 5px;
+              &.gray {
+                background-color: var(--color-gray);
+              }
+              &.red {
+                background-color: var(--color-bg-red);
+              }
+            }
+          }
+        }
+      }
+      .item-total {
+        .total-info {
+          .flex-center(space-between);
+        }
+        .total-price {
+          font-size: 24px;
+          margin-top: 15px;
+          span {
+            color: var(--color-hl-text);
+          }
+        }
+      }
+      .item-btn {
+        .btn {
+          max-width: none;
+          width: 48%;
+          line-height: 50px;
+        }
+      }
+    }
+  }
+}

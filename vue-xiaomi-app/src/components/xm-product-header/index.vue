@@ -1,5 +1,5 @@
 <template>
-  <div class="product-header" :class="{'fixed-top':isFixed}">
+  <div class="xm-product-header" :class="{'fixed-top':isFixed}">
     <div class="container">
       <div class="left">
         <span class="product-title">{{data.name}}</span>
@@ -18,7 +18,7 @@
   import { FixTopMixin } from 'mixins'
 
   export default {
-    name: 'product-header',
+    name: 'xm-product-header',
     mixins: [FixTopMixin],
     props: {
       data: {

@@ -59,6 +59,13 @@ export const PRODUCT_SLIDE_ITEMS = [
   { id: 46, url: require('assets/img/products/gallery-5.jpg') }
 ]
 
+export const DETAIL_SLIDE_ITEMS = [
+  { id: 42, url: require('assets/img/details/phone-1.jpg') },
+  { id: 43, url: require('assets/img/details/phone-2.jpg') },
+  { id: 44, url: require('assets/img/details/phone-3.jpg') },
+  { id: 45, url: require('assets/img/details/phone-4.jpg') }
+]
+
 export const NAV_MENU_ITEMS = [
   { id: 101, text: '手机 电话卡', url: 'https://www.mi.com/p/1915.html' },
   { id: 102, text: '电视 盒子', url: 'https://www.mi.com/a/h/9819.html' },
