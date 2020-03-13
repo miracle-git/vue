@@ -1,7 +1,7 @@
 <template>
   <li class="shopcart-item">
     <div class="col-check">
-      <span class="checkbox" :class="{'checked': data.productSelected}" @click="$emit('update', { item: data })"></span>
+      <span class="checkbox" :class="{'checked': data.productSelected}" @click="$emit('update', params)"></span>
     </div>
     <div class="col-3 col-product">
       <a :href="`/product/${data.productId}`">
@@ -17,8 +17,8 @@
     <div class="col-1 col-price">{{data.productPrice | currency}}</div>
     <div class="col-2 col-number">
       <xm-number-box :data="data"
-                     @minus="$emit('update', { item: data, action: 'minus' })"
-                     @plus="$emit('update', { item: data, action: 'plus' })"/>
+                     @minus="$emit('update', { ...params, action: 'minus' })"
+                     @plus="$emit('update', { ...params, action: 'plus' })"/>
     </div>
     <div class="col-1 col-price">{{data.productTotalPrice | currency}}</div>
     <div class="col-1 col-op">
@@ -38,6 +38,11 @@
         default() {
           return {}
         }
+      }
+    },
+    computed: {
+      params() {
+        return { item: this.data, parent: this.$parent }
       }
     },
     components: {
