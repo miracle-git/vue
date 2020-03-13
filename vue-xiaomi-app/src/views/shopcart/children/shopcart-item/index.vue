@@ -42,7 +42,7 @@
     },
     computed: {
       params() {
-        return { item: this.data, parent: this.$parent }
+        return { item: this.data, vm: this.$parent }
       }
     },
     components: {
