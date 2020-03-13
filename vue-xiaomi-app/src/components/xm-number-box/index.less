@@ -1,0 +1,22 @@
+.xm-number-box {
+  display: flex;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid var(--color-bd);
+  font-size: 14px;
+  a {
+    width: 40px;
+    color: var(--color-black);
+    &.disabled {
+      background-color: var(--color-bg-gray);
+      color: var(--color-bd);
+      cursor: not-allowed;
+    }
+  }
+  span {
+    flex: 1;
+    border-left: 1px solid var(--color-bd);
+    border-right: 1px solid var(--color-bd);
+  }
+}

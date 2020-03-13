@@ -32,7 +32,6 @@
 
 <script>
   import { getProductList } from 'services/product.service'
-  // import { addToCart } from 'services/cart.service'
   import { BANNER_LIST_ITEMS, XM_APP_KEYS } from 'config/app.conf'
   export default {
     name: 'home-product-list',
@@ -66,11 +65,8 @@
             return { cls: '', text: '' }
         }
       },
-      addToCart() {
-        this.$bus.$emit(XM_APP_KEYS.addToCart)
-        // addToCart(id).then(res => {
-        //   console.log(res)
-        // })
+      addToCart(id) {
+        this.$bus.$emit(XM_APP_KEYS.addToCart, id)
       }
     }
   }

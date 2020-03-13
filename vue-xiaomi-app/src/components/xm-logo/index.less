@@ -1,0 +1,20 @@
+.xm-logo {
+  width: 55px;
+  height: 55px;
+  background-color: var(--color-hl-text);
+  a {
+    display: inline-block;
+    width: 110px;
+    &:hover:before {
+      margin-left: -55px;
+      transition: margin .2s;
+    }
+    &:before {
+      .icon-bg(55px, 55px, "~assets/img/header/mi-logo.png");
+      transition: margin .2s;
+    }
+    &:after {
+      .icon-bg(55px, 55px, "~assets/img/header/mi-home.png");
+    }
+  }
+}

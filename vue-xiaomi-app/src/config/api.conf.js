@@ -7,7 +7,12 @@ export default getDataApi({
   },
   cart: {
     add: '/carts',
-    num: '/carts/products/sum'
+    num: '/carts/products/sum',
+    list: '/carts',
+    select: '/carts/selectAll',
+    unSelect: '/carts/unSelectAll',
+    update: '/carts/{pid}',
+    delete: '/carts/{pid}'
   },
   user: {
     info: '/user',

@@ -15,11 +15,11 @@
 </template>
 
 <script>
-  import { FixTopMixin } from 'mixins'
+  import { fixed } from 'm2-vue'
 
   export default {
     name: 'xm-product-header',
-    mixins: [FixTopMixin],
+    mixins: [fixed],
     props: {
       data: {
         type: Object,
@@ -29,7 +29,9 @@
       }
     },
     data: () => ({
-      scrollTop: 150
+      fixedConfig: {
+        scrollTop: 150
+      }
     })
   }
 </script>

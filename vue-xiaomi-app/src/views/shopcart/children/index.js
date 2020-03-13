@@ -1,1 +1,1 @@
-export const NavBar = require('./nav-bar').default
+export const ShopcartList = require('./shopcart-list').default

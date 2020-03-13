@@ -1,12 +1,36 @@
 <template>
-  <div class="xm-header">
-    Xiaomi Order Header
+  <div class="xm-order-header">
+    <div class="container">
+      <xm-logo/>
+      <div class="title">
+        <h2>{{title}}</h2>
+        <slot/>
+      </div>
+      <div class="right">
+        <a href="javascript:void(0);" class="username">{{userName}}</a>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+  import { mapState } from 'vuex'
+  import XmLogo from '../xm-logo'
+
   export default {
-    name: 'xm-order-header'
+    name: 'xm-order-header',
+    props: {
+      title: {
+        type: String,
+        required: true
+      }
+    },
+    computed: {
+      ...mapState(['userName'])
+    },
+    components: {
+      XmLogo
+    }
   }
 </script>
 

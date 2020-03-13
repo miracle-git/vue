@@ -2,9 +2,7 @@
   <div class="xm-header">
     <xm-topbar/>
     <div class="container">
-      <div class="header-logo">
-        <a href="/"></a>
-      </div>
+      <xm-logo/>
       <div class="header-menu">
         <div class="menu-item" v-for="item in productNavItems" :key="item.type">
           <h2 class="title">{{item.title}}</h2>
@@ -37,6 +35,7 @@
   import { getProductList } from 'services/product.service'
   import { PRODUCT_NAV_ITEMS } from 'config/app.conf'
   import XmTopbar from '../xm-topbar'
+  import XmLogo from '../xm-logo'
 
   export default {
     name: 'xm-header',
@@ -65,7 +64,8 @@
       }
     },
     components: {
-      XmTopbar
+      XmTopbar,
+      XmLogo
     }
   }
 </script>

@@ -1,0 +1,77 @@
+.shopcart-list {
+  padding: 25px 0;
+  background-color: var(--color-bg-gray);
+  .cart-box {
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--color-white);
+    font-size: 14px;
+    .cart-item-head {
+      display: flex;
+      height: 48px;
+      line-height: 48px;
+      border-bottom: 1px solid var(--color-bd);
+    }
+    .cart-item-list {
+      overflow-y: auto;
+      height: 480px;
+    }
+    .cart-item-total {
+      height: 60px;
+      line-height: 60px;
+      border-top: 1px solid var(--color-bd);
+      padding: 0 20px;
+      p {
+        display: inline-block;
+        margin: 0 20px;
+        span {
+          margin: 0 5px;
+          font-weight: 600;
+          color: var(--color-hl-text);
+        }
+      }
+      .left {
+        .buy:hover {
+          color: var(--color-hl-text);
+        }
+      }
+      .right {
+        .total {
+          color: var(--color-hl-text);
+          span {
+            font-size: 24px;
+            vertical-align: bottom;
+          }
+        }
+      }
+    }
+    .checkbox {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border: 1px solid #e5e5e5;
+      vertical-align: middle;
+      cursor: pointer;
+      &.checked {
+        background: url(~assets/img/icons/icon-gou.png) var(--color-hl-text) no-repeat 50%;
+        background-size: 16px 12px;
+        border: none;
+      }
+    }
+    .col-check {
+      width: 60px;
+    }
+    .col-op {
+      cursor: pointer;
+    }
+    .col-1 {
+      flex: 1;
+    }
+    .col-2 {
+      flex: 2;
+    }
+    .col-3 {
+      flex: 3;
+    }
+  }
+}

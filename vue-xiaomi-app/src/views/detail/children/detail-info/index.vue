@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="item-btn">
-          <a href="javascript:void(0);" class="btn btn-xl btn-primary">加入购物车</a>
+          <a href="javascript:void(0);" class="btn btn-xl btn-primary" @click="handleAddCart(data.id)">加入购物车</a>
         </div>
       </div>
     </div>
@@ -55,8 +55,9 @@
 </template>
 
 <script>
+  import { mapActions } from 'vuex'
   import { swiper, swiperSlide } from 'vue-awesome-swiper'
-  import { DETAIL_SLIDE_ITEMS } from 'config/app.conf'
+  import { DETAIL_SLIDE_ITEMS, XM_APP_KEYS } from 'config/app.conf'
 
   export default {
     name: 'detail-info',
@@ -98,9 +99,13 @@
       }
     },
     methods: {
+      ...mapActions(['saveCartNum']),
       getSelectedItem(type) {
         const item = this[type].data.find(item => item.type === this[type].value)
         return item ? item.text : ''
+      },
+      handleAddCart(id) {
+        this.$bus.$emit(XM_APP_KEYS.addToCart, id)
       }
     },
     components: {

@@ -32,5 +32,5 @@
 
 <style lang="less">
   @import "~assets/css/base.less";
-  @import "~m2-vue-ui/lib/theme/base.css";
+  @import "~m2-ui/lib/theme-grace/index.css";
 </style>

@@ -3,8 +3,8 @@
     [
       "component",
       {
-        "libraryName": "m2-vue-ui",
-        "styleLibraryName": "theme"
+        "libraryName": "m2-ui",
+        "styleLibraryName": "theme-grace"
       }
     ]
   ]

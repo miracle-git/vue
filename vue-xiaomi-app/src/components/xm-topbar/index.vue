@@ -14,7 +14,7 @@
           <a href="javascript:void(0);">退出</a>
           <a href="javascript:void(0);">我的订单</a>
         </span>
-        <a href="javascript:void(0);" class="cart"><span class="icon-cart"></span>购物车<span v-if="cartNum">({{cartNum}})</span></a>
+        <a href="/shopcart" class="cart"><span class="icon-cart"></span>购物车<span v-if="cartNum">({{cartNum}})</span></a>
       </div>
     </div>
   </div>

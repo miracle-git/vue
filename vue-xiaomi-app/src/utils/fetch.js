@@ -28,10 +28,10 @@ const _fetch_core = {
   },
   _spinner: {
     show(loading) {
-      loading && context && context.$loading()
+      loading && context && context.$m2.loading()
     },
     hide(loading) {
-      loading && context && context.$loading.hide()
+      loading && context && context.$m2.loading.hide()
     }
   },
   _handle: (res, options = {}) => {
@@ -98,11 +98,15 @@ const _fetch_core = {
 
 export const get = (url, options = {}) => _fetch_core._fetch(url, options)
 export const post = (url, options = {}) => _fetch_core._fetch(url, { ...options, method: 'post' })
+export const put = (url, options = {}) => _fetch_core._fetch(url, { ...options, method: 'put' })
+export const del = (url, options = {}) => _fetch_core._fetch(url, { ...options, method: 'delete' })
 export const all = (...options) => _fetch_core._fetchAll(options)
 export const proxyGet = (url, options = {}) => _fetch_core._fetch(url, { ...options, proxy: true })
 export const proxyPost = (url, options = {}) => _fetch_core._fetch(url, { ...options, proxy: true, method: 'post' })
+export const proxyPut = (url, options = {}) => _fetch_core._fetch(url, { ...options, proxy: true, method: 'put' })
+export const proxyDel = (url, options = {}) => _fetch_core._fetch(url, { ...options, proxy: true, method: 'delete' })
 export const proxyAll = (...options) => _fetch_core._fetchAll(options.map(item => ({ ...item, config: { ...item.config, proxy: true } })))
 export const http = {
-  get, post, all,
-  proxy: { get: proxyGet, post: proxyPost, all: proxyAll }
+  get, post, put, del, all,
+  proxy: { get: proxyGet, post: proxyPost, put: proxyPut, del: proxyDel, all: proxyAll }
 }
