@@ -1,5 +1,5 @@
 import { render } from 'm2-vue'
-import VueUI from 'm2-vue-ui'
+import M2 from 'm2-ui'
 import App from './views/app'
 import router from './router'
 import store from './store'
@@ -12,6 +12,6 @@ export default render(App, {
     loading: require('assets/img/common/loading.gif')
   },
   init: Vue => {
-    Vue.use(VueUI)
+    Vue.use(M2)
   }
 })

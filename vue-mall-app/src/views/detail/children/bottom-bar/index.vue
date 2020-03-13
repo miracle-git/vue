@@ -38,12 +38,12 @@
       ...mapActions(['addToCart', 'addToCartAsync']),
       add() {
         // this.addToCart(this.data)
-        this.addToCartAsync(this.data).then(res => this.$toast(res))
+        this.addToCartAsync(this.data).then(res => this.$m2.toast(res))
       },
       buy() {
-        this.$loading()
+        this.$m2.loading()
         setTimeout(() => {
-          this.$loading.hide()
+          this.$m2.loading.hide()
         }, 2000)
       }
     }

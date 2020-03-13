@@ -17,10 +17,10 @@ const _fetch_core = {
   },
   _spinner: {
     show(loading) {
-      loading && context && context.$loading()
+      loading && context && context.$m2.loading()
     },
     hide(loading) {
-      loading && context && context.$loading.hide()
+      loading && context && context.$m2.loading.hide()
     }
   },
   // _spinner: (loading, show = true) => {
