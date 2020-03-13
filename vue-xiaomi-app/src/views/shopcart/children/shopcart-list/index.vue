@@ -13,8 +13,8 @@
           <li class="col-1">操作</li>
         </ul>
         <ul class="cart-item-list">
-          <shopcart-item v-for="(item, index) in cartList" :key="index"
-                         :data="item" @update="handleUpdateCart" @delete="handleDeleteCart"/>
+          <shopcart-item v-for="(item, index) in cartList" :key="index" :data="item"
+                         @update="handleUpdateCart" @delete="handleDeleteCart"/>
         </ul>
         <div class="cart-item-total clear-fix" :class="{'fixed-bottom':isFixed}">
           <div class="left">
