@@ -62,9 +62,6 @@
       this.getCartList()
       $handleCartData = this.handleCartData
     },
-    mounted() {
-      console.log(this.$bus.$throttle)
-    },
     methods: {
       getCartList() {
         getCartList().then(res => this.handleCartData(res))
