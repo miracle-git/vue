@@ -33,9 +33,12 @@
 </template>
 
 <script>
+  import { DataEvent } from 'm2-core'
   import { fixed } from 'm2-vue'
   import { getCartList, selectAll, updateCart, deleteCart } from 'services/cart.service'
   import ShopcartItem from '../shopcart-item'
+
+  let $handleCartData = null// 解决组件函数内部this指向
 
   export default {
     name: 'shopcart-list',
@@ -57,6 +60,10 @@
     },
     created() {
       this.getCartList()
+      $handleCartData = this.handleCartData
+    },
+    mounted() {
+      console.log(this.$bus.$throttle)
     },
     methods: {
       getCartList() {
@@ -65,7 +72,7 @@
       handleSelectAll() {
         selectAll(this.checkedAll).then(res => this.handleCartData(res))
       },
-      handleUpdateCart({ item, action }) {
+      handleUpdateCart: DataEvent.debounce(({ item, action }) => {
         let selected
         switch (action) {
           case 'minus':
@@ -79,8 +86,8 @@
           default:
             selected = !item.productSelected
         }
-        updateCart(item.productId, item.quantity, selected).then(res => this.handleCartData(res))
-      },
+        updateCart(item.productId, item.quantity, selected).then(res => $handleCartData(res))
+      }),
       handleDeleteCart(id) {
         deleteCart(id).then(res => this.handleCartData(res))
       },

@@ -1,7 +1,7 @@
 <template>
   <div class="detail-info">
-    <div class="container clear-fix">
-      <div class="detail-swiper left">
+    <div class="container">
+      <div class="detail-swiper">
         <swiper :options="swiperOptions">
           <swiper-slide v-for="(item, index) in slideList" :key="index">
             <img :src="item.url" alt="">
@@ -9,7 +9,7 @@
           <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
       </div>
-      <div class="detail-content right">
+      <div class="detail-content">
         <div class="item-info">
           <h2 class="item-title">{{data.name}}</h2>
           <p class="item-desc">相机全新升级 / 960帧超慢动作 / 手持超级夜景 / 全球首款双频GPS / 骁龙845处理器 / 红<br/>外人脸解锁 / AI变焦双摄 / 三星 AMOLED 屏</p>

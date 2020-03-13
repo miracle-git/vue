@@ -1,8 +1,8 @@
 <template>
-  <m2-modal title="提示" ref="modal" customClass="xm-cart-modal">
+  <m2-modal title="提示" ref="modal" customClass="xm-cart-modal"
+            okText="查看购物车" cancelText="继续购物"
+            @ok="$router.push('/shopcart')">
     <p slot="body">商品添加成功！</p>
-    <a href="javascript:void(0);" class="btn btn-primary" slot="footer"
-       @click="$router.push('/shopcart')">查看购物车</a>
   </m2-modal>
 </template>
 
