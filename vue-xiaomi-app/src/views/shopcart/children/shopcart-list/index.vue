@@ -69,6 +69,23 @@
       handleSelectAll() {
         selectAll(this.checkedAll).then(res => this.handleCartData(res))
       },
+      @throttle
+      handleUpdateCart({ item, action }) {
+        let selected
+        switch (action) {
+          case 'minus':
+            if (item.quantity === 1) return
+            --item.quantity
+            break
+          case 'plus':
+            if (item.quantity > item.productStock) return
+            ++item.quantity
+            break
+          default:
+            selected = !item.productSelected
+        }
+        updateCart(item.productId, item.quantity, selected).then(res => this.handleCartData(res))
+      },
       handleUpdateCart: DataEvent.debounce(({ item, action }) => {
         let selected
         switch (action) {
