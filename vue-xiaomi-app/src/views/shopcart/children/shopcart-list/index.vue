@@ -66,7 +66,7 @@
       handleSelectAll() {
         selectAll(this.checkedAll).then(res => this.handleCartData(res))
       },
-      handleUpdateCart: DataEvent.debounce(({ item, action, parent }) => {
+      handleUpdateCart: DataEvent.debounce(({ item, action, vm }) => {
         let selected
         switch (action) {
           case 'minus':
@@ -80,7 +80,7 @@
           default:
             selected = !item.productSelected
         }
-        updateCart(item.productId, item.quantity, selected).then(res => parent.handleCartData(res))
+        updateCart(item.productId, item.quantity, selected).then(res => vm.handleCartData(res))
       }),
       handleDeleteCart(id) {
         deleteCart(id).then(res => this.handleCartData(res))
