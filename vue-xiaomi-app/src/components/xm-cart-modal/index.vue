@@ -7,24 +7,26 @@
 </template>
 
 <script>
+  import Vue from 'vue'
+  import { mapActions } from 'vuex'
   import { XM_APP_KEYS } from 'config/app.conf'
-  // import { addToCart } from 'services/cart.service'
+  import { addToCart } from 'services/cart.service'
 
   export default {
     name: 'xm-cart-modal',
-    created() {
+    mounted() {
       this.$bus.$on(XM_APP_KEYS.addToCart, this.handleAddCart)
     },
     methods: {
+      ...mapActions(['saveCartNum']),
       handleAddCart(id) {
-        this.$refs.modal.show()
-        // addToCart(id).then((res) => {
-        //   const num = res && res.cartProductVoList ? res.cartProductVoList.length : 0
-        //   if (num > 0) {
-        //     this.saveCartNum(num)
-        //     this.$refs.modal.show()
-        //   }
-        // })
+        addToCart(id).then((res) => {
+          const num = res && res.cartTotalQuantity ? res.cartTotalQuantity : 0
+          if (num > 0) {
+            this.saveCartNum(num)
+            Vue.nextTick(() => this.$refs.modal && this.$refs.modal.show())
+          }
+        })
       }
     }
   }

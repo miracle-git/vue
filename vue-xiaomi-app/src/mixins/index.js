@@ -1,1 +1,1 @@
-export const ProductInfoMixin = require('./product-info').default
+export const product = require('./product').default

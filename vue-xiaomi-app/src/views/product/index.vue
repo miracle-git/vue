@@ -10,12 +10,12 @@
 </template>
 
 <script>
-  import { ProductInfoMixin } from 'mixins'
+  import { product } from 'mixins'
   import { XmProductHeader } from 'components'
   import { ProductDetail, ProductSwiper, ProductVideo } from './children'
 
   export default {
-    mixins: [ProductInfoMixin],
+    mixins: [product],
     components: {
       XmProductHeader,
       ProductDetail,

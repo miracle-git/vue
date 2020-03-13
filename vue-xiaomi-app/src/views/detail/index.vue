@@ -11,13 +11,13 @@
 </template>
 
 <script>
-  import { ProductInfoMixin } from 'mixins'
+  import { product } from 'mixins'
   import { XM_APP_KEYS } from 'config/app.conf'
   import { XmProductHeader, XmCartModal, XmBottomBar } from 'components'
   import { DetailInfo, DetailTip } from './children'
 
   export default {
-    mixins: [ProductInfoMixin],
+    mixins: [product],
     methods: {
       addToCart(id) {
         this.$bus.$emit(XM_APP_KEYS.addToCart, id)
