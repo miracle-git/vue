@@ -4,7 +4,7 @@
       <div class="cart-box">
         <ul class="cart-item-head">
           <li class="col-check">
-            <span class="checkbox" :class="{'checked':checkedAll}" @click="handleSelectAll"></span>
+            <span class="checkbox" :class="{'checked':checkedAll}" @click="handleSelectAll" v-if="cartList.length"></span>
           </li>
           <li class="col-3">商品</li>
           <li class="col-1">单价</li>
@@ -15,8 +15,12 @@
         <ul class="cart-item-list">
           <shopcart-item v-for="(item, index) in cartList" :key="index" :data="item"
                          @update="handleUpdateCart" @delete="handleDeleteCart"/>
+          <li class="no-data-item" v-if="!cartList.length">
+            <span>购物车空空，赶快去购物吧！</span>
+            <a href="/" class="btn btn-md btn-primary">继续购物</a>
+          </li>
         </ul>
-        <div class="cart-item-total clear-fix" :class="{'fixed-bottom':isFixed}">
+        <div class="cart-item-total clear-fix" :class="{'fixed-bottom':isFixed}" v-if="cartList.length">
           <div class="left">
             <a href="/" class="buy">继续购物</a>
             <p>共<span>{{cartList.length}}</span>件商品，已选择<span>{{checkedNum}}</span>件</p>

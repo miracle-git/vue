@@ -1,7 +1,9 @@
 const path = require('path')
+const { title } = require('./package')
 
 module.exports = {
   configureWebpack: {
+    name: title,
     resolve: {
       alias: {
         'assets': '@/assets',
