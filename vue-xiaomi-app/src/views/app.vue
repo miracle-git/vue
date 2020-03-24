@@ -33,4 +33,5 @@
 <style lang="less">
   @import "~assets/css/base.less";
   @import "~m2-ui/lib/theme-grace/index.css";
+  @import "~element-ui/lib/theme-chalk/index.css";
 </style>

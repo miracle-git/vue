@@ -45,7 +45,7 @@
         const username = this.username.trim()
         const password = this.password.trim()
         if (!username || !password) {
-          alert('请填写账号或密码！')
+          this.$message.warning('请填写账号或密码!')
           return
         }
         // 验证通过后开始登录
@@ -54,7 +54,7 @@
           this.$bus.$emit(XM_APP_KEYS.getAppData)
           this.$router.push('/')
         }).catch(err => {
-          alert(err.message)
+          this.$message.error(err.message)
         })
       },
       handleRegister() {
@@ -62,14 +62,14 @@
         const password = this.password.trim()
         const email = username + '@xiaomi.com'
         if (!username || !password) {
-          alert('请填写账号或密码！')
+          this.$message.warning('请填写账号或密码!')
           return
         }
         // 验证通过后开始注册
-        register({ username, password, email }).then(res => {
-          alert('注册成功！')
+        register({ username, password, email }).then(_ => {
+          this.$message.success('注册成功!')
         }).catch(err => {
-          alert(err.message)
+          this.$message.error(err.message)
         })
       }
     }

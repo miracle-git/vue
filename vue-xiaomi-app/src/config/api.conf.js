@@ -17,6 +17,7 @@ export default getDataApi({
   user: {
     info: '/user',
     login: '/user/login',
+    logout: '/user/logout',
     register: '/user/register'
   }
 }, '/api')
