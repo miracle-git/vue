@@ -14,6 +14,11 @@ export default getDataApi({
     update: '/carts/{pid}',
     delete: '/carts/{pid}'
   },
+  address: {
+    list: '/shippings'
+  },
+  order: {
+  },
   user: {
     info: '/user',
     login: '/user/login',

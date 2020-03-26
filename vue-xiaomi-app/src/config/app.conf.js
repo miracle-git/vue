@@ -2,7 +2,8 @@ export const XM_APP_KEYS = {
   loginUserId: 'xm:login-user-id',
   getAppData: 'xm:evt-get-app-data',
   addToCart: 'xm:evt-add-to-cart',
-  fixedTop: 'xm:evt-fixed-top'
+  fixedTop: 'xm:evt-fixed-top',
+  updateOrderHeader: 'xm:evt-update-order-header'
 }
 
 export const PRODUCT_NAV_ITEMS = [

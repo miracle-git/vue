@@ -1,7 +1,7 @@
 <template>
   <div class="default-layout">
     <xm-header/>
-    <m2-smart-route/>
+    <m2-route-view/>
     <xm-footer/>
   </div>
 </template>

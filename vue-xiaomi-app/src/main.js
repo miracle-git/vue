@@ -4,6 +4,7 @@ import { Message } from 'element-ui'
 import App from './views/app'
 import router from './router'
 import store from './store'
+import './plugins/svg'
 
 export default render(App, {
   router,

@@ -1,0 +1,66 @@
+.confirm-address-list {
+  .address-title {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-text-dark);
+  }
+  .address-list {
+    margin-right: -15px;
+    margin-bottom: -15px;
+    .address-item {
+      float: left;
+      width: 25%;
+      margin-bottom: 15px;
+      cursor: pointer;
+      .address-inner {
+        margin-right: 15px;
+        height: 150px;
+        padding: 15px;
+        border: 1px solid var(--color-bd);
+        &:hover,
+        &.checked {
+          border-color: var(--color-hl-text);
+        }
+        .name {
+          margin-bottom: 15px;
+          padding-bottom: 5px;
+          border-bottom: 1px dashed var(--color-bd);
+          font-weight: 400;
+          font-size: 18px;
+          color: var(--color-text-dark);
+        }
+        .phone,
+        .addr {
+          margin: 5px 0;
+          font-size: 14px;
+        }
+        .action {
+          margin-top: 20px;
+          padding-top: 5px;
+          border-top: 1px dashed var(--color-bd);
+          svg {
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            &:hover {
+              fill: var(--color-hl-text);
+            }
+          }
+        }
+      }
+      &.create-item {
+        .address-inner a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 100%;
+          justify-content: center;
+          svg {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}

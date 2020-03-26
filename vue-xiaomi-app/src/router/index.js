@@ -3,7 +3,7 @@ import { getRouter } from 'm2-vue'
 const routes = [
   {
     path: '/',
-    component: () => import('views/layout/default'),
+    component: () => import('layouts/default'),
     children: [
       { path: 'home', component: () => import('views/home') },
       { path: 'product/:id', component: () => import('views/product') },
@@ -14,7 +14,7 @@ const routes = [
   { path: '/shopcart', component: () => import('views/shopcart') },
   {
     path: '/order',
-    component: () => import('views/layout/order'),
+    component: () => import('layouts/order'),
     children: [
       { path: 'list', component: () => import('views/order') },
       { path: 'confirm', component: () => import('views/confirm') },
