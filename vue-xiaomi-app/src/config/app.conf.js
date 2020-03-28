@@ -3,7 +3,8 @@ export const XM_APP_KEYS = {
   getAppData: 'xm:evt-get-app-data',
   addToCart: 'xm:evt-add-to-cart',
   fixedTop: 'xm:evt-fixed-top',
-  updateOrderHeader: 'xm:evt-update-order-header'
+  updateOrderHeader: 'xm:evt-update-order-header',
+  updateShippingId: 'xm:evt-update-shipping-id'
 }
 
 export const PRODUCT_NAV_ITEMS = [

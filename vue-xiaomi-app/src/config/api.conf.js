@@ -15,9 +15,13 @@ export default getDataApi({
     delete: '/carts/{pid}'
   },
   address: {
-    list: '/shippings'
+    list: '/shippings',
+    add: '/shippings',
+    edit: '/shippings/{id}',
+    del: '/shippings/{id}'
   },
   order: {
+    add: '/orders'
   },
   user: {
     info: '/user',

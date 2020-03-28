@@ -1,0 +1,38 @@
+.address-modal {
+  p {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .modal-wrapper {
+    .addr-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      .input-item,
+      .select-item {
+        flex: 1;
+        height: 40px;
+        line-height: 40px;
+        margin-right: 10px;
+        padding: 0 10px;
+        border: 1px solid var(--color-bd);
+        outline: none;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      textarea {
+        flex: 1;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid var(--color-bd);
+      }
+    }
+  }
+  /deep/ /*解决scoped穿透*/
+  .modal-footer {
+    .btn-primary {
+      background-color: var(--color-hl-text) !important;
+    }
+  }
+}

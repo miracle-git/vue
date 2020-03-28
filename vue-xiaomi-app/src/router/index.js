@@ -18,7 +18,7 @@ const routes = [
     children: [
       { path: 'list', component: () => import('views/order') },
       { path: 'confirm', component: () => import('views/confirm') },
-      { path: 'payment', component: () => import('views/payment') }
+      { path: 'payment', name: '/order/payment', component: () => import('views/payment') }
     ]
   }
 ]
