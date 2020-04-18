@@ -40,7 +40,7 @@ module.exports = {
   },
   devServer: {
     host: 'localhost',
-    port: 8080,
+    port: 8083,
     proxy: {
       '/api': {
         target: 'http://mall-pre.springboot.cn',
