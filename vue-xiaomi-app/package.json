@@ -15,7 +15,6 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "axios": "^0.19.2",
     "core-js": "^3.4.3",
     "element-ui": "^2.13.0",
     "m2-core": "^1.4.7",

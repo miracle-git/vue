@@ -1,4 +1,4 @@
-> 基于[M2前端全家桶框架](https://github.com/miracle-git/m2-webapp.git)搭建的企业级PC端开发应用。
+> 基于[M2前端全家桶框架](https://github.com/miracle-git/m2-web-app.git)搭建的企业级PC端开发应用。
 
 ## 运行步骤
 

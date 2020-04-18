@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <m2-smart-route/>
+    <m2-router-view/>
     <tab-bar/>
     <svg-icon/>
   </div>
