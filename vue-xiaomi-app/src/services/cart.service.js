@@ -1,4 +1,4 @@
-import { http } from 'utils/fetch'
+import http from 'utils/http'
 import api from 'config/api.conf'
 
 export const addToCart = (id) => http.proxy.post(api.cart.add, { params: { productId: id, selected: true } })

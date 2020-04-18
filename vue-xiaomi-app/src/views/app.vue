@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <m2-route-view/>
+    <m2-router-view/>
   </div>
 </template>
 

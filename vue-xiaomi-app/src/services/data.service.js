@@ -1,6 +1,6 @@
-import { get, http } from 'utils/fetch'
+import http from 'utils/http'
 import api from 'config/api.conf'
 
-export const getDictList = () => get(api.getDictList, { loading: true })
-export const getUserList = (type, page) => get(api.user.list, { params: { type, page } })
+export const getDictList = () => http.get(api.getDictList, { loading: true })
+export const getUserList = (type, page) => http.get(api.user.list, { params: { type, page } })
 export const getAppData = () => http.proxy.all({ url: api.user.info }, { url: api.cart.num })

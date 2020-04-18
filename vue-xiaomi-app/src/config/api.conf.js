@@ -6,7 +6,7 @@ export default getDataApi({
     info: '/products/{id}'
   },
   cart: {
-    add: '/carts',
+    add: '/carts?new=1&xx=2',
     num: '/carts/products/sum',
     list: '/carts',
     select: '/carts/selectAll',

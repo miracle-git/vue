@@ -1,27 +1,19 @@
-This project was bootstrapped with [@vue/cli](https://github.com/miracle-git/vue-app-boilerplate.git).
+> 基于[M2前端全家桶框架](https://github.com/miracle-git/m2-webapp.git)搭建的企业级PC端开发应用。
 
-## Available Scripts
+## 运行步骤
 
-First clone the boilerplate into your application:
+- 首先全局安装[m2-cli](http://github.com/miracle-git/m2.git) (如果你已安装，请忽略)
+```bash
+npm install -g m2-cli
+```
+- 通过**m2**命令行一键下载项目脚手架
+```bash
+m2 init (也可使用别名m2 i)
+```
+- 然后会依次提示您输入项目名称，描述，类型，作者等信息（不输入将采用默认值）
+- 当出现**Project init successfully**表示项目脚手架已下载成功
+- 按照操作指引安装依赖，运行项目即可
 
-### `git clone https://github.com/miracle-git/vue-app-boilerplate.git my-vue-app`
-### `cd my-vue-app`
-### `npm install` or `yarn install` (recommend)
+**提示：如果你忘记修改项目名称，描述等信息，可直接下载完成后修改package.json中的name,title,author,description以及repository.url**
 
-In the project directory, you can run:
-
-### `npm run serve` or `yarn serve` (recommend)
-
-Runs the app in the development mode.<br>
-Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm run build` or `yarn build` (recommend)
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles Vue in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- 接下来，就开始你的快乐编程之旅把!

@@ -3,7 +3,7 @@
     <xm-order-header :title="title">
       <span>{{tips}}</span>
     </xm-order-header>
-    <m2-route-view/>
+    <m2-router-view/>
     <xm-bottom-bar/>
     <xm-footer/>
   </div>

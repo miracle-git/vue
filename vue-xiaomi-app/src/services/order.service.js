@@ -1,4 +1,4 @@
-import { http } from 'utils/fetch'
+import http from 'utils/http'
 import api from 'config/api.conf'
 
 export const getAddressList = () => http.proxy.get(api.address.list)

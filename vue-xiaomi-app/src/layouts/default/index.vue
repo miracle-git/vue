@@ -1,7 +1,7 @@
 <template>
   <div class="default-layout">
     <xm-header/>
-    <m2-route-view/>
+    <m2-router-view/>
     <xm-footer/>
   </div>
 </template>
