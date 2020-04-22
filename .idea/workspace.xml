@@ -39,6 +39,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
@@ -81,7 +82,8 @@
       <workItem from="1579576911811" duration="37156000" />
       <workItem from="1581310765743" duration="23420000" />
       <workItem from="1581528604542" duration="557000" />
-      <workItem from="1587231724174" duration="2973000" />
+      <workItem from="1587231724174" duration="3873000" />
+      <workItem from="1587543650307" duration="572000" />
     </task>
     <servers />
   </component>
