@@ -1,0 +1,37 @@
+.payment-type {
+  margin: 20px;
+  .item-title {
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom: 1px solid var(--color-bd);
+    color: var(--color-text-dark);
+  }
+  .item-header {
+    padding: 15px 0;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-text-black);
+  }
+  .item-pay {
+    display: inline-block;
+    width: 200px;
+    height: 64px;
+    margin-right: 20px;
+    border: 1px solid var(--color-bd);
+    background-size: 100px 36px !important;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid var(--color-hl-text);
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &.ali-pay {
+      background: url("~assets/img/icons/icon-ali.png") no-repeat center;
+    }
+    &.wx-pay {
+      background: url("~assets/img/icons/icon-wx.png") no-repeat center;
+    }
+  }
+}

@@ -21,7 +21,8 @@ export default getDataApi({
     del: '/shippings/{id}'
   },
   order: {
-    add: '/orders'
+    add: '/orders',
+    detail: '/orders/{no}'
   },
   user: {
     info: '/user',

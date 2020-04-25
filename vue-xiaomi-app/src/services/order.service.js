@@ -6,3 +6,4 @@ export const createAddress = (data) => http.proxy.post(api.address.add, { params
 export const updateAddress = (id, data) => http.proxy.put(api.address.edit.replace(/{id}/, id), { params: { ...data } })
 export const deleteAddress = (id) => http.proxy.del(api.address.del.replace(/{id}/, id))
 export const createOrder = (id) => http.proxy.post(api.order.add, { params: { shippingId: id } })
+export const getOrderDetail = (no) => http.proxy.get(api.order.detail.replace(/{no}/, no))
