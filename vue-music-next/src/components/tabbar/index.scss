@@ -3,15 +3,15 @@
   height: 44px;
   line-height: 44px;
   font-size: $font-size-medium;
-  .item {
+  .tabbar-item {
     flex: 1;
     text-align: center;
-    .link {
+    .tabbar-item-link {
       padding-bottom: 5px;
       color: $color-text-l;
     }
     &.router-link-active {
-      .link {
+      .tabbar-item-link {
         color: $color-theme;
         border-bottom: 2px solid $color-theme;
       }

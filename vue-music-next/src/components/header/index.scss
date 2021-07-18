@@ -3,7 +3,7 @@
   text-align: center;
   color: $color-theme;
   font-size: 0;
-  .icon {
+  .header-icon {
     display: inline-block;
     vertical-align: top;
     margin-top: 6px;
@@ -13,13 +13,13 @@
     background-size: 30px 32px;
     @include bg-image('~@/assets/images/logo');
   }
-  .text {
+  .header-text {
     display: inline-block;
     vertical-align: top;
     line-height: 44px;
     font-size: $font-size-large;
   }
-  .mine {
+  .header-mine {
     position: absolute;
     top: 0;
     right: 0;

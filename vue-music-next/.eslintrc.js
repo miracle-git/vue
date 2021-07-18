@@ -14,6 +14,7 @@ module.exports = {
     'indent': 'off',
     'space-before-function-paren': 'off',
     'no-trailing-spaces': 'off',
+    'no-return-assign': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
   }
