@@ -9,9 +9,14 @@ export function removeClass(el, className) {
 }
 
 export function append(el) {
+  const style = getComputedStyle(el)
+  if (!['absolute', 'fixed', 'relative'].includes(style.position)) {
+    addClass(el, 'g-relative')
+  }
   el.appendChild(el.instance.$el)
 }
 
 export function remove(el) {
+  removeClass(el, 'g-relative')
   el.removeChild(el.instance.$el)
 }
