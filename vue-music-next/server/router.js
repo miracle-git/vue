@@ -6,9 +6,11 @@
  * 这样也比较符合真实企业项目的开发规范，即数据的处理放在后端做，前端只做数据渲染和交互。
  */
 const registerRecommend = require('./recommend')
+const registerSinger = require('./singer')
 
 function registerRouter(app) {
   registerRecommend(app)
+  registerSinger(app)
 }
 
 module.exports = registerRouter

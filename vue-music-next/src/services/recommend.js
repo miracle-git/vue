@@ -1,3 +1,3 @@
 import { get } from './api'
 
-export const getRecommend = () => get('/api/recommend')
+export const getRecommendList = () => get('/api/recommend')

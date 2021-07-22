@@ -24,7 +24,6 @@ function registerRecommend(app) {
     const sign = getSecuritySign(data)
     // 计算随机值
     const random = getRandom('recom')
-
     // 发送 get 请求
     get(baseUrl, {
       sign,

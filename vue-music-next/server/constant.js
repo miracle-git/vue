@@ -5,5 +5,6 @@ module.exports = {
     token: 5381,
     referer: 'https://y.qq.com/',
     origin: 'https://y.qq.com/'
-  }
+  },
+  hotTag: '热'
 }

@@ -5,23 +5,13 @@
         <!--轮播图-->
         <div class="slider-wrapper">
           <div class="slider-content">
-            <vm-slider v-if="sliders.length" :sliders="sliders"/>
+            <vm-slider v-if="sliders.length" :data="sliders"/>
           </div>
         </div>
         <!--歌单列表-->
-        <div class="album-list">
-          <h1 class="list-title" v-show="!loading">热门歌单推荐</h1>
-          <ul v-if="albums.length">
-            <li v-for="item in albums" :key="item.id" class="album-item">
-              <div class="album-icon">
-                <img v-lazy="item.pic" width="60" height="60"/>
-              </div>
-              <div class="album-text">
-                <h2 class="album-name">{{item.username}}</h2>
-                <p class="album-title">{{item.title}}</p>
-              </div>
-            </li>
-          </ul>
+        <div class="album-wrapper">
+          <h1 class="album-header" v-show="!loading">热门歌单推荐</h1>
+          <vm-album-list v-if="albums.length" :data="albums"/>
         </div>
       </div>
     </vm-scroll>
@@ -30,25 +20,30 @@
 
 <script>
   import { defineComponent, ref, computed, onBeforeMount } from 'vue'
-  import { getRecommend } from '@/services/recommend'
+  import { getRecommendList } from '@/services/recommend'
   import { Scroll, Slider } from '@/components'
+  import { AlbumList } from './children'
 
   export default defineComponent({
     components: {
       VmScroll: Scroll,
-      VmSlider: Slider
+      VmSlider: Slider,
+      VmAlbumList: AlbumList
     },
     setup() {
+      // 定义数据
       const sliders = ref([])
       const albums = ref([])
       // 计算属性
       const loading = computed(() => !sliders.value.length && !albums.value.length)
-      // 加载数据
-      onBeforeMount(async () => {
-        const result = await getRecommend()
+      // 定义方法
+      async function getData() {
+        const result = await getRecommendList()
         sliders.value = result.sliders
         albums.value = result.albums
-      })
+      }
+      // 加载数据
+      onBeforeMount(getData)
       // 返回数据
       return {
         sliders,

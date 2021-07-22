@@ -1,14 +1,14 @@
 <template>
   <div class="vm-slider" ref="rootRef">
     <div class="slider-group">
-      <div class="slider-page" v-for="item in sliders" :key="item.id">
+      <div class="slider-page" v-for="item in data" :key="item.id">
         <a :href="item.link">
           <img :src="item.pic"/>
         </a>
       </div>
     </div>
     <div class="slider-dots">
-      <span class="slider-dot" v-for="(item,index) in sliders" :key="item.id"
+      <span class="slider-dot" v-for="(item,index) in data" :key="item.id"
             :class="{'active': current === index}">
       </span>
     </div>
@@ -22,7 +22,7 @@
   export default defineComponent({
     name: 'vm-slider',
     props: {
-      sliders: {
+      data: {
         type: Array,
         default: () => []
       }
