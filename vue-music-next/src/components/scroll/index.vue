@@ -32,7 +32,3 @@
     }
   }
 </script>
-
-<style lang="scss">
-  @import "./index";
-</style>

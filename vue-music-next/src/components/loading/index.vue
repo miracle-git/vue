@@ -2,7 +2,7 @@
   <div class="vm-loading">
     <div class="loading-content">
       <img width="24" height="24" :src="require('@/assets/images/loading.gif')"/>
-      <p class="desc">{{title}}</p>
+      <p class="text">{{title}}</p>
     </div>
   </div>
 </template>

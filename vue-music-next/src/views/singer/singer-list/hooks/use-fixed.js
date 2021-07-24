@@ -1,5 +1,5 @@
 import { ref, computed, watch, nextTick } from 'vue'
-import { GROUP_TITLE_HEIGHT } from '@/views/singer/constant'
+import { SINGER_CONFIG } from '@/config/view.config'
 
 export default function useFixed(props) {
   // 定义数据
@@ -16,7 +16,8 @@ export default function useFixed(props) {
   })
   const fixedStyle = computed(() => {
     const offset = distance.value
-    const diff = (offset > 0 && offset < GROUP_TITLE_HEIGHT) ? offset - GROUP_TITLE_HEIGHT : 0
+    const { groupTitleHeight } = SINGER_CONFIG
+    const diff = (offset > 0 && offset < groupTitleHeight) ? offset - groupTitleHeight : 0
     return {
       transform: `translate3d(0, ${diff}px, 0)`
     }

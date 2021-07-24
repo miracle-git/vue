@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     'indent': 'off',
     'space-before-function-paren': 'off',
+    'object-property-newline': 'off',
     'no-trailing-spaces': 'off',
     'no-return-assign': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',

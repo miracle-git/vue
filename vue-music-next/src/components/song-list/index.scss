@@ -1,0 +1,23 @@
+.vm-song-list {
+  .song-item {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 64px;
+    font-size: $font-size-medium;
+    .song-wrapper {
+      flex: 1;
+      line-height: 20px;
+      overflow: hidden;
+      .song-name {
+        @include no-wrap();
+        color: $color-text
+      }
+      .song-desc {
+        @include no-wrap();
+        margin-top: 4px;
+        color: $color-text-d;
+      }
+    }
+  }
+}

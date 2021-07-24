@@ -1,7 +1,7 @@
 <template>
   <div class="recommend-page" v-loading="loading">
-    <vm-scroll>
-      <div class="recommend-content">
+    <vm-scroll class="scroll-content">
+      <div class="wrapper">
         <!--轮播图-->
         <div class="slider-wrapper">
           <div class="slider-content">
@@ -20,7 +20,7 @@
 
 <script>
   import { defineComponent, ref, computed, onBeforeMount } from 'vue'
-  import { getRecommendList } from '@/services/recommend'
+  import { getRecommendList } from '@/services/recommend.service'
   import { Scroll, Slider } from '@/components'
   import { AlbumList } from './children'
 

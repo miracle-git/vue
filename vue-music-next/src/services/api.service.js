@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { API_OK, BASE_URL } from '@/config/api.conf'
+import { API_OK, BASE_URL } from '@/config/api.config'
 
 axios.defaults.baseURL = BASE_URL
 

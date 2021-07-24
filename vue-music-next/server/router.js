@@ -7,10 +7,14 @@
  */
 const registerRecommend = require('./recommend')
 const registerSinger = require('./singer')
+const registerSingerDetail = require('./singer-detail')
+const registerSongsUrl = require('./songs-url')
 
 function registerRouter(app) {
   registerRecommend(app)
   registerSinger(app)
+  registerSingerDetail(app)
+  registerSongsUrl(app)
 }
 
 module.exports = registerRouter

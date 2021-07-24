@@ -1,5 +1,5 @@
 import { ref, reactive, computed } from 'vue'
-import { SHORTCUT_ITEM_HEIGHT } from '@/views/singer/constant'
+import { SINGER_CONFIG } from '@/config/view.config'
 
 export default function useShortcut(props, { groupRef }) {
   // 定义数据
@@ -18,7 +18,7 @@ export default function useShortcut(props, { groupRef }) {
   }
   function onTouchMove(e) {
     touches.y2 = e.touches[0].pageY
-    const offset = (touches.y2 - touches.y1) / SHORTCUT_ITEM_HEIGHT | 0
+    const offset = (touches.y2 - touches.y1) / SINGER_CONFIG.shortcutItemHeight | 0
     const anchorIndex = touches.anchorIndex + offset
 
     scrollTo(anchorIndex)

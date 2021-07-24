@@ -1,6 +1,7 @@
 import { Loading } from '@/components'
-import createLoadingDirective from '@/assets/scripts/create-loading-directive'
+import createDirective from '@/assets/scripts/create-directive'
 
-const loadingDirective = createLoadingDirective(Loading)
-
-export default loadingDirective
+export default {
+  name: 'loading',
+  directive: createDirective(Loading)
+}

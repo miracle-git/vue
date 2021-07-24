@@ -8,15 +8,15 @@ export function removeClass(el, className) {
   el.classList.remove(className)
 }
 
-export function append(el) {
+export function append(el, name) {
   const style = getComputedStyle(el)
   if (!['absolute', 'fixed', 'relative'].includes(style.position)) {
     addClass(el, 'g-relative')
   }
-  el.appendChild(el.instance.$el)
+  el.appendChild(el[name].instance.$el)
 }
 
-export function remove(el) {
+export function remove(el, name) {
   removeClass(el, 'g-relative')
-  el.removeChild(el.instance.$el)
+  el.removeChild(el[name].instance.$el)
 }

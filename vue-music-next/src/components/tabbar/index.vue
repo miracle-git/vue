@@ -8,13 +8,13 @@
 
 <script>
   import { reactive, defineComponent } from 'vue'
-  import { TabbarList } from '@/config/constant.conf'
+  import { TABBAR_LIST } from '@/config/component.config'
 
   export default defineComponent({
     name: 'vm-tabbar',
     setup() {
       return {
-        list: reactive(TabbarList)
+        list: reactive(TABBAR_LIST)
       }
     }
   })

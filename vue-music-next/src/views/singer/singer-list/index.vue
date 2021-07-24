@@ -4,7 +4,7 @@
       <li v-for="group in data" :key="group.title" class="group-item">
         <h2 class="group-title">{{group.title}}</h2>
         <ul>
-          <li v-for="item in group.list" :key="item.id" class="singer-item">
+          <li v-for="item in group.list" :key="item.id" class="singer-item" @click="onItemClick(item)">
             <img class="singer-avatar" v-lazy="item.pic"/>
             <span class="singer-name">{{item.name}}</span>
           </li>
@@ -20,7 +20,9 @@
          @touchend.stop.prevent>
       <ul>
         <li v-for="(item, index) in shortcutList" :key="item" :data-index="index"
-            class="shortcut-item" :class="{'active': current===index}">{{item}}</li>
+            class="shortcut-item" :class="{'active': current===index}">
+          {{item}}
+        </li>
       </ul>
     </div>
   </vm-scroll>
@@ -43,9 +45,14 @@
         default: () => []
       }
     },
-    setup(props) {
+    emits: ['select'],
+    setup(props, { emit }) {
       const { groupRef, current, fixedTitle, fixedStyle, onScroll } = useFixed(props)
       const { shortcutList, scrollRef, onTouchStart, onTouchMove } = useShortcut(props, { groupRef })
+      // 定义方法
+      function onItemClick(item) {
+        emit('select', item)
+      }
       return {
         groupRef,
         fixedTitle,
@@ -55,7 +62,8 @@
         shortcutList,
         scrollRef,
         onTouchStart,
-        onTouchMove
+        onTouchMove,
+        onItemClick
       }
     }
   })

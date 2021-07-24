@@ -23,7 +23,7 @@ function registerRecommend(app) {
     // 计算签名值
     const sign = getSecuritySign(data)
     // 计算随机值
-    const random = getRandom('recom')
+    const random = getRandom('getRecommend')
     // 发送 get 请求
     get(baseUrl, {
       sign,
