@@ -5,13 +5,19 @@
     </div>
     <div class="music-title">{{title}}</div>
     <div class="music-pic" :style="musicPicStyle" ref="musicPicRef">
+      <div class="play-btn-wrapper" :style="playBtnStyle">
+        <div class="play-btn" v-show="data.length>0" @click="onRandomSong(data)">
+          <i class="icon-play"></i>
+          <span class="text">随机播放全部</span>
+        </div>
+      </div>
       <div class="filter" :style="filterStyle"></div>
     </div>
     <vm-scroll class="song-list" :style="scrollStyle" ref="scrollRef"
                :probe-type="3" @scroll="onScroll"
                v-loading="loading" v-no-result:[noResultText]="noResult">
       <div class="song-list-wrapper">
-        <vm-song-list :data="data"/>
+        <vm-song-list :data="data" @select="onSelectSong"/>
       </div>
     </vm-scroll>
   </div>
@@ -19,6 +25,7 @@
 
 <script>
   import { defineComponent, ref, computed, onMounted } from 'vue'
+  import { useStore } from 'vuex'
   import { Scroll, SongList } from '@/components'
   import { SINGER_CONFIG } from '@/config/view.config'
 
@@ -48,8 +55,25 @@
       const scrollRef = ref(null)
       const scrollY = ref(0)
       const maxTranslateY = ref(0)
+      // 获取hooks
+      const store = useStore()
       // 计算属性
       const noResult = computed(() => !props.loading && !props.data.length)
+      const playBtnStyle = computed(() => {
+        let display = ''
+        // 临时存储响应式变量
+        const r = {
+          scrollY: scrollY.value,
+          maxTranslateY: maxTranslateY.value,
+          musicPicHeight: musicPicHeight.value
+        }
+        if (r.scrollY >= r.maxTranslateY) {
+          display = 'none'
+        }
+        return {
+          display
+        }
+      })
       const musicPicStyle = computed(() => {
         let zIndex = 0
         let paddingTop = '70%'
@@ -113,15 +137,24 @@
       function onScroll(pos) {
         scrollY.value = -pos.y
       }
+      function onSelectSong({ songs, index }) {
+        store.dispatch('selectPlay', { list: songs, index })
+      }
+      function onRandomSong(songs) {
+        store.dispatch('randomPlay', songs)
+      }
       // 返回数据
       return {
         noResult,
+        playBtnStyle,
         filterStyle,
         musicPicStyle,
         musicPicRef,
         scrollRef,
         scrollStyle,
-        onScroll
+        onScroll,
+        onSelectSong,
+        onRandomSong
       }
     }
   })
