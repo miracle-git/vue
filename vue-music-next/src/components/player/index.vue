@@ -14,7 +14,7 @@
       <div class="bottom">
         <div class="player-icons">
           <div class="icon left-icon">
-            <i class="icon-sequence"></i>
+            <i :class="modeIcon" @click="onChangeMode"></i>
           </div>
           <div class="icon left-icon" :class="disabledIcon">
             <i class="icon-prev" @click="onPrev"></i>
@@ -26,7 +26,7 @@
             <i class="icon-next" @click="onNext"></i>
           </div>
           <div class="icon right-icon">
-            <i class="icon-not-favorite"></i>
+            <i :class="favoriteIcon" @click="onToggleFavorite"></i>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@
 <script>
   import { defineComponent, ref } from 'vue'
   import { useStore } from 'vuex'
-  import usePlay from './hooks/use-play'
+  import { usePlay, useMode, useFavorite } from './hooks'
 
   export default defineComponent({
     name: 'vm-player',
@@ -48,7 +48,9 @@
 
       return {
         audioRef,
-        ...usePlay(store, { audio: audioRef })
+        ...usePlay(store, { audio: audioRef }),
+        ...useMode(store),
+        ...useFavorite(store)
       }
     }
   })

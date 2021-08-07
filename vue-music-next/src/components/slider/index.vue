@@ -17,7 +17,7 @@
 
 <script>
   import { ref, defineComponent } from 'vue'
-  import useSlider from './hooks/use-slider'
+  import { useSlider } from './hooks'
 
   export default defineComponent({
     name: 'vm-slider',

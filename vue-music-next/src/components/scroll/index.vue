@@ -6,7 +6,7 @@
 
 <script>
   import { ref } from 'vue'
-  import useScroll from './hooks/use-scroll'
+  import { useScroll } from './hooks'
 
   export default {
     name: 'vm-scroll',

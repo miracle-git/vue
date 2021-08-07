@@ -4,7 +4,8 @@ import {
   SET_PLAY_STATE,
   SET_PLAY_MODE,
   SET_CURRENT_INDEX,
-  SET_FULL_SCREEN
+  SET_FULL_SCREEN,
+  SET_FAVORITE_LIST
 } from '@/config/store.config'
 
 const mutations = {
@@ -25,6 +26,9 @@ const mutations = {
   },
   [SET_FULL_SCREEN](state, fullScreen) {
     state.fullScreen = fullScreen
+  },
+  [SET_FAVORITE_LIST](state, list) {
+    state.favoriteList = list
   }
 }
 

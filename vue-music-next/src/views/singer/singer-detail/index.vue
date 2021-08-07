@@ -21,8 +21,7 @@
     props: {
       singer: {
         type: Object,
-        default: () => {},
-        required: true
+        default: () => {}
       }
     },
     setup(props) {

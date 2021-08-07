@@ -31,8 +31,7 @@
 <script>
   import { defineComponent, ref } from 'vue'
   import { Scroll } from '@/components'
-  import useFixed from './hooks/use-fixed'
-  import useShortcut from './hooks/use-shortcut'
+  import { useFixed, useShortcut } from './hooks'
 
   export default defineComponent({
     name: 'vm-singer-list',
@@ -54,7 +53,7 @@
       function onItemClick(item) {
         emit('select', item)
       }
-      
+
       return {
         groupRef,
         scrollRef,

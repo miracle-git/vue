@@ -1,3 +1,4 @@
 export const CACHE_KEY = {
-  singer: 'VM:MUSIC_SINGER'
+  singer: '__vm-music-singer__',
+  favorite: '__vm-music-favorite__'
 }

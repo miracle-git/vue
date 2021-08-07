@@ -4,3 +4,4 @@ export const TABBAR_LIST = [
   { path: '/rank', name: '排行' },
   { path: '/search', name: '搜索' }
 ]
+export const MAX_FAVORITE_COUNT = 100

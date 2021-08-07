@@ -1,4 +1,4 @@
-import { ref, computed, watch } from 'vue'
+import { ref, computed, watch, nextTick } from 'vue'
 import { SET_FULL_SCREEN, SET_PLAY_STATE, SET_CURRENT_INDEX } from '@/config/store.config'
 
 export default function usePlay(store, refs) {
@@ -16,9 +16,11 @@ export default function usePlay(store, refs) {
   // watch
   watch(currentSong, val => {
     if (!val.id || !val.url) return
-    songReady.value = false
-    audio.value.src = val.url
-    audio.value.play()
+    nextTick(() => {
+      songReady.value = false
+      audio.value.src = val.url
+      audio.value.play()
+    })
   })
   watch(playing, val => {
     if (!songReady.value) return

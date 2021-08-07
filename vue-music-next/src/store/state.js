@@ -1,4 +1,6 @@
 import { PLAY_MODE } from '@/config/store.config'
+import { CACHE_KEY } from '@/config/key.config'
+import { load } from '@/assets/scripts/array-store'
 
 const state = {
   sequenceList: [],
@@ -6,7 +8,8 @@ const state = {
   playing: false,
   playMode: PLAY_MODE.sequence,
   currentIndex: 0,
-  fullScreen: false
+  fullScreen: false,
+  favoriteList: load(CACHE_KEY.favorite)
 }
 
 export default state
