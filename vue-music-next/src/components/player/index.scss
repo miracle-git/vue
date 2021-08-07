@@ -53,10 +53,75 @@
         color: $color-text;
       }
     }
+    .middle {
+      position: fixed;
+      width: 100%;
+      top: 80px;
+      bottom: 170px;
+      white-space: nowrap;
+      font-size: 0;
+      .middle-left {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 80%;
+        .cd-wrapper {
+          position: absolute;
+          left: 10%;
+          top: 0;
+          width: 80%;
+          box-sizing: border-box;
+          height: 100%;
+          .cd {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            img {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              box-sizing: border-box;
+              border-radius: 50%;
+              border: 10px solid rgba(255, 255, 255, 0.1);
+            }
+            .playing {
+              animation: rotate 20s linear infinite;
+            }
+          }
+        }
+      }
+    }
     .bottom {
       position: absolute;
       bottom: 50px;
       width: 100%;
+      .progress-bar-wrapper {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 0px auto;
+        padding: 10px 0;
+        .time {
+          color: $color-text;
+          font-size: $font-size-small;
+          flex: 0 0 40px;
+          line-height: 30px;
+          width: 40px;
+          &.time-left {
+            text-align: left;
+          }
+          &.time-right {
+            text-align: right;
+          }
+        }
+        .vm-progress-bar {
+          flex: 1;
+        }
+      }
       .player-icons {
         display: flex;
         align-items: center;

@@ -4,12 +4,13 @@ import { CACHE_KEY } from '@/config/key.config'
 import { MAX_FAVORITE_COUNT } from '@/config/component.config'
 import { SET_FAVORITE_LIST } from '@/config/store.config'
 
-export default function useFavorite(store) {
+export default function useFavorite(store, refs) {
+  // data
+  const { currentSong } = refs
   // computed
   const favoriteList = computed(() => store.state.favoriteList)
-  const currentSong = computed(() => store.getters.currentSong)
   const isFavorite = computed(() => {
-    return favoriteList.value.some(item => item.id === currentSong.value.id)
+    return favoriteList.value.some(compare)
   })
   const favoriteIcon = computed(() => isFavorite.value ? 'icon-favorite' : 'icon-not-favorite')
   // methods

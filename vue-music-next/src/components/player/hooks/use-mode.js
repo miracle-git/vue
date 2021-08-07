@@ -1,9 +1,10 @@
 import { computed } from 'vue'
 import { PLAY_MODE } from '@/config/store.config'
 
-export default function useMode(store) {
+export default function useMode(store, refs) {
+  // data
+  const { playMode } = refs
   // computed
-  const playMode = computed(() => store.state.playMode)
   const modeIcon = computed(() => {
     return playMode.value === PLAY_MODE.sequence
       ? 'icon-sequence' : playMode.value === PLAY_MODE.random

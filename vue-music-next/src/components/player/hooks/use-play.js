@@ -1,22 +1,21 @@
 import { ref, computed, watch, nextTick } from 'vue'
-import { SET_FULL_SCREEN, SET_PLAY_STATE, SET_CURRENT_INDEX } from '@/config/store.config'
+import { PLAY_MODE, SET_FULL_SCREEN, SET_PLAY_STATE, SET_CURRENT_INDEX } from '@/config/store.config'
 
 export default function usePlay(store, refs) {
   // data
-  const { audio } = refs
+  const { audio, currentTime, currentSong, playing, playMode } = refs
   const songReady = ref(false)
   // computed
-  const currentSong = computed(() => store.getters.currentSong)
   const currentIndex = computed(() => store.state.currentIndex)
   const fullScreen = computed(() => store.state.fullScreen)
   const playList = computed(() => store.state.playList)
-  const playing = computed(() => store.state.playing)
   const playIcon = computed(() => playing.value ? 'icon-pause' : 'icon-play')
   const disabledIcon = computed(() => songReady.value ? '' : 'disabled-icon')
   // watch
   watch(currentSong, val => {
     if (!val.id || !val.url) return
     nextTick(() => {
+      currentTime.value = 0
       songReady.value = false
       audio.value.src = val.url
       audio.value.play()
@@ -43,6 +42,9 @@ export default function usePlay(store, refs) {
   function loop() {
     audio.value.currentTime = 0
     audio.value.play()
+    if (!playing.value) {
+      store.commit(SET_PLAY_STATE, true)
+    }
   }
   function onGoBack() {
     store.commit(SET_FULL_SCREEN, false)
@@ -60,6 +62,16 @@ export default function usePlay(store, refs) {
   }
   function onError() {
     songReady.value = true
+  }
+  function onEnded() {
+    nextTick(() => {
+      currentTime.value = 0
+      if (playMode.value === PLAY_MODE.loop) {
+        loop()
+      } else {
+        onNext()
+      }
+    })
   }
   function onPrev() {
     play(songs => {
@@ -81,7 +93,6 @@ export default function usePlay(store, refs) {
   }
 
   return {
-    currentSong,
     fullScreen,
     playIcon,
     disabledIcon,
@@ -91,6 +102,7 @@ export default function usePlay(store, refs) {
     onNext,
     onPause,
     onReady,
-    onError
+    onError,
+    onEnded
   }
 }

@@ -5,3 +5,4 @@ export const TABBAR_LIST = [
   { path: '/search', name: '搜索' }
 ]
 export const MAX_FAVORITE_COUNT = 100
+export const PROGRESS_BAR_WIDTH = 16
