@@ -1,1 +1,1 @@
-export const currentSong = (state) => state.playList[state.currentIndex]
+export const currentSong = (state) => state.playList[state.currentIndex] || {}

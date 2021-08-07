@@ -28,8 +28,9 @@
       }
     },
     setup() {
+      // data
       const rootRef = ref(null)
-      const { current } = useSlider(rootRef)
+      const current = useSlider({ root: rootRef })
 
       return {
         rootRef,

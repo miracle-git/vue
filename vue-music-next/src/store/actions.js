@@ -1,13 +1,13 @@
 import { shuffle } from '@/assets/scripts/util'
-import { PLAY_MODE } from '@/config/store.config'
 import {
+  PLAY_MODE,
   SET_SEQUENCE_LIST,
   SET_PLAY_LIST,
   SET_PLAY_STATE,
   SET_PLAY_MODE,
   SET_CURRENT_INDEX,
   SET_FULL_SCREEN
-} from './types'
+} from '@/config/store.config'
 
 export const selectPlay = ({ commit, state }, { list, index }) => {
   commit(SET_PLAY_MODE, PLAY_MODE.sequence)

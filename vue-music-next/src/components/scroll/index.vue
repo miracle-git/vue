@@ -23,7 +23,7 @@
     emits: ['scroll'],
     setup(props, { emit }) {
       const rootRef = ref(null)
-      const scroll = useScroll(rootRef, props, emit)
+      const scroll = useScroll({ root: rootRef }, props, emit)
 
       return {
         rootRef,

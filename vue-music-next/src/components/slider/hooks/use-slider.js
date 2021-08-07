@@ -4,12 +4,13 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 BScroll.use(BSlide)
 
-export default function useSlider(wrapper) {
-  const rootRef = ref(null)
+export default function useSlider(refs) {
+  // data
+  const { root } = refs
   const current = ref(0)
-
+  // lifecycle
   onMounted(() => {
-    rootRef.value = new BScroll(wrapper.value, {
+    root.value = new BScroll(root.value, {
       click: true,
       scrollX: true,
       scrollY: false,
@@ -18,15 +19,9 @@ export default function useSlider(wrapper) {
       slide: true,
       probeType: 2
     })
-    rootRef.value.on('slideWillChange', page => current.value = page.pageX)
+    root.value.on('slideWillChange', page => current.value = page.pageX)
   })
+  onUnmounted(() => root.value && root.value.destroy())
 
-  onUnmounted(() => {
-    rootRef.value.destroy()
-  })
-
-  return {
-    rootRef,
-    current
-  }
+  return current
 }

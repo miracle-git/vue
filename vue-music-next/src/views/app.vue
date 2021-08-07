@@ -2,15 +2,17 @@
   <vm-header/>
   <vm-tabbar/>
   <router-view/>
+  <vm-player/>
 </template>
 
 <script>
-  import { Header, Tabbar } from '@/components'
+  import { Header, Tabbar, Player } from '@/components'
 
   export default {
     components: {
       VmHeader: Header,
-      VmTabbar: Tabbar
+      VmTabbar: Tabbar,
+      VmPlayer: Player
     }
   }
 </script>

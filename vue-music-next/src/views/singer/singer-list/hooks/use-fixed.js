@@ -1,14 +1,14 @@
 import { ref, computed, watch, nextTick } from 'vue'
 import { SINGER_CONFIG } from '@/config/view.config'
 
-export default function useFixed(props) {
-  // 定义数据
-  const groupRef = ref(null)
+export default function useFixed(props, refs) {
+  // data
+  const { group } = refs
   const heights = ref([])
   const scrollY = ref(0)
   const current = ref(0)
   const distance = ref(0)
-  // 计算属性
+  // computed
   const fixedTitle = computed(() => {
     if (scrollY.value < 0) return ''
     const currentGroup = props.data[current.value]
@@ -22,7 +22,7 @@ export default function useFixed(props) {
       transform: `translate3d(0, ${diff}px, 0)`
     }
   })
-  // 定义watch
+  // watch
   watch(() => props.data, async () => {
     await nextTick()
     calculate()
@@ -38,9 +38,9 @@ export default function useFixed(props) {
       }
     }
   })
-  // 定义方法
+  // methods
   function calculate() {
-    const children = groupRef.value.children
+    const children = group.value.children
     const listHeight = heights.value
     let height = 0
     // 清空heights
@@ -55,9 +55,8 @@ export default function useFixed(props) {
   function onScroll(pos) {
     scrollY.value = -pos.y
   }
-  // 返回数据
+
   return {
-    groupRef,
     current,
     fixedTitle,
     fixedStyle,

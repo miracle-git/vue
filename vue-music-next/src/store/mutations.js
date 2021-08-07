@@ -5,7 +5,7 @@ import {
   SET_PLAY_MODE,
   SET_CURRENT_INDEX,
   SET_FULL_SCREEN
-} from './types'
+} from '@/config/store.config'
 
 const mutations = {
   [SET_SEQUENCE_LIST](state, list) {

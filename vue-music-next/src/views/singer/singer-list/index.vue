@@ -29,7 +29,7 @@
 </template>
 
 <script>
-  import { defineComponent } from 'vue'
+  import { defineComponent, ref } from 'vue'
   import { Scroll } from '@/components'
   import useFixed from './hooks/use-fixed'
   import useShortcut from './hooks/use-shortcut'
@@ -47,23 +47,20 @@
     },
     emits: ['select'],
     setup(props, { emit }) {
-      const { groupRef, current, fixedTitle, fixedStyle, onScroll } = useFixed(props)
-      const { shortcutList, scrollRef, onTouchStart, onTouchMove } = useShortcut(props, { groupRef })
-      // 定义方法
+      // data
+      const groupRef = ref(null)
+      const scrollRef = ref(null)
+      // methods
       function onItemClick(item) {
         emit('select', item)
       }
+      
       return {
         groupRef,
-        fixedTitle,
-        fixedStyle,
-        onScroll,
-        current,
-        shortcutList,
         scrollRef,
-        onTouchStart,
-        onTouchMove,
-        onItemClick
+        onItemClick,
+        ...useFixed(props, { group: groupRef }),
+        ...useShortcut(props, { group: groupRef, scroll: scrollRef })
       }
     }
   })

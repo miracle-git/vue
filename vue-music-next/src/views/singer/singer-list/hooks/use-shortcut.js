@@ -1,9 +1,9 @@
-import { ref, reactive, computed } from 'vue'
+import { reactive, computed } from 'vue'
 import { SINGER_CONFIG } from '@/config/view.config'
 
-export default function useShortcut(props, { groupRef }) {
+export default function useShortcut(props, refs) {
   // 定义数据
-  const scrollRef = ref(null)
+  const { group, scroll: scroller } = refs
   const touches = reactive({})
   // 计算属性
   const shortcutList = computed(() => props.data.map(item => item.title))
@@ -25,13 +25,12 @@ export default function useShortcut(props, { groupRef }) {
   }
   function scrollTo(index) {
     index = Math.max(0, Math.min(shortcutList.value.length - 1, index))
-    const target = groupRef.value.children[index]
-    const scroll = scrollRef.value.scroll
+    const target = group.value.children[index]
+    const { scroll } = scroller.value
     scroll.scrollToElement(target, 0)
   }
   // 返回数据
   return {
-    scrollRef,
     shortcutList,
     onTouchStart,
     onTouchMove
