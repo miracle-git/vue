@@ -1,4 +1,4 @@
-import { ref, computed, watch, nextTick } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { PLAY_MODE, SET_FULL_SCREEN, SET_PLAY_STATE, SET_CURRENT_INDEX } from '@/config/store.config'
 
 export default function usePlay(store, refs) {
@@ -14,16 +14,20 @@ export default function usePlay(store, refs) {
   // watch
   watch(currentSong, val => {
     if (!val.id || !val.url) return
-    nextTick(() => {
-      currentTime.value = 0
-      songReady.value = false
-      audio.value.src = val.url
-      audio.value.play()
-    })
+    currentTime.value = 0
+    songReady.value = false
+    audio.value.load()
+    audio.value.src = val.url
+    audio.value.play()
+    beginPlaying()
   })
   watch(playing, val => {
     if (!songReady.value) return
-    val ? audio.value.play() : audio.value.pause()
+    if (val) {
+      audio.value.play()
+    } else {
+      audio.value.pause()
+    }
   })
   // methods
   function play(handlerIndex) {
@@ -34,14 +38,15 @@ export default function usePlay(store, refs) {
     } else {
       const index = handlerIndex(songs)
       store.commit(SET_CURRENT_INDEX, index)
-      if (!playing.value) {
-        store.commit(SET_PLAY_STATE, true)
-      }
+      beginPlaying()
     }
   }
   function loop() {
     audio.value.currentTime = 0
     audio.value.play()
+    beginPlaying()
+  }
+  function beginPlaying() {
     if (!playing.value) {
       store.commit(SET_PLAY_STATE, true)
     }
@@ -64,14 +69,12 @@ export default function usePlay(store, refs) {
     songReady.value = true
   }
   function onEnded() {
-    nextTick(() => {
-      currentTime.value = 0
-      if (playMode.value === PLAY_MODE.loop) {
-        loop()
-      } else {
-        onNext()
-      }
-    })
+    currentTime.value = 0
+    if (playMode.value === PLAY_MODE.loop) {
+      loop()
+    } else {
+      onNext()
+    }
   }
   function onPrev() {
     play(songs => {
