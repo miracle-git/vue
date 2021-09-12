@@ -1,10 +1,9 @@
-import { ref, computed, watch } from 'vue'
+import { computed, watch } from 'vue'
 import { PLAY_MODE, SET_FULL_SCREEN, SET_PLAY_STATE, SET_CURRENT_INDEX } from '@/config/store.config'
 
 export default function usePlay(store, refs) {
   // data
-  const { audio, currentTime, currentSong, playing, playMode } = refs
-  const songReady = ref(false)
+  const { audio, currentTime, currentSong, playing, playMode, songReady, toggleLyric } = refs
   // computed
   const currentIndex = computed(() => store.state.currentIndex)
   const fullScreen = computed(() => store.state.fullScreen)
@@ -23,10 +22,13 @@ export default function usePlay(store, refs) {
   })
   watch(playing, val => {
     if (!songReady.value) return
+    const $audio = audio.value
     if (val) {
-      audio.value.play()
+      $audio.play()
+      toggleLyric()
     } else {
-      audio.value.pause()
+      $audio.pause()
+      toggleLyric(false)
     }
   })
   // methods
@@ -64,6 +66,7 @@ export default function usePlay(store, refs) {
   function onReady() {
     if (songReady.value) return
     songReady.value = true
+    toggleLyric()
   }
   function onError() {
     songReady.value = true

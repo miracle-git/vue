@@ -9,12 +9,14 @@ const registerRecommend = require('./recommend')
 const registerSinger = require('./singer')
 const registerSingerDetail = require('./singer-detail')
 const registerSongsUrl = require('./songs-url')
+const registerLyric = require('./lyric')
 
 function registerRouter(app) {
   registerRecommend(app)
   registerSinger(app)
   registerSingerDetail(app)
   registerSongsUrl(app)
+  registerLyric(app)
 }
 
 module.exports = registerRouter

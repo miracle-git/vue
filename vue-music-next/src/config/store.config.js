@@ -5,6 +5,7 @@ export const SET_PLAY_MODE = 'SET_PLAY_MODE'
 export const SET_CURRENT_INDEX = 'SET_CURRENT_INDEX'
 export const SET_FULL_SCREEN = 'SET_FULL_SCREEN'
 export const SET_FAVORITE_LIST = 'SET_FAVORITE_LIST'
+export const ADD_SONG_LYRIC = 'ADD_SONG_LYRIC'
 // 播放器播放模式
 export const PLAY_MODE = {
   sequence: 0,
