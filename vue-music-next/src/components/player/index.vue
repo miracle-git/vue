@@ -126,7 +126,7 @@
         ...useMode(store, { playMode }),
         ...useFavorite(store, { currentSong }),
         ...useLyric(store, { lyricScroll: lyricScrollRef, lyricContent: lyricContentRef, currentLyric, currentSong, toggleLyric, songReady }),
-        ...useExchange(store)
+        ...useExchange()
       }
     }
   })

@@ -35,9 +35,10 @@ export default function useLyric(store, refs) {
     playingLyric.value = txt
     const $scroll = lyricScroll.value
     const $lyric = lyricContent.value
-    if (lineNum > 5 && $lyric && $scroll.scroll) {
+    if (!$lyric) return
+    if (lineNum > 5 && $scroll.scroll) {
       const elem = $lyric.children[lineNum - 5]
-      $scroll.scroll.scrollToElement(elem, 2000)
+      $scroll.scroll.scrollToElement(elem, 1000)
     } else {
       $scroll.scroll.scrollTo(0, 0, 1000)
     }

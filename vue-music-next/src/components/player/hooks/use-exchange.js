@@ -1,6 +1,6 @@
 import { ref } from 'vue'
 
-export default function useExchange(store, refs) {
+export default function useExchange() {
   // data
   const currentPanel = ref('cd')
   const middleLeftStyle = ref(null)
